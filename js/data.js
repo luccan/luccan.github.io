@@ -230,14 +230,14 @@ var data = [
 		}
 	},
 	{
-		title: "SAJC Book Prize Winner for H2 Computing (College Day 2012)",
+		title: "SAJC Book Prize for H2 Computing",
 		type: "competition",
 		imgurl: "./img/gaya_logo.png",
 		company: "SAJC",
 		position: "Winner",
 		start: new Date("Oct 2012"),
 		end: new Date("Oct 2012"),
-		desc: "Best in Cohort",
+		desc: "Best in Cohort, given on College Day 2012.",
 		details: "",
 		priority: 5,
 		relevance: {
