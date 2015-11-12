@@ -150,10 +150,10 @@ var data = [
 		}
 	},
 	{
-		title: "United Research Opportunity Project: Tracking People in Smart City",
+		title: "UROP: Tracking People in Smart City",
 		type: "project",
 		imgurl: "./img/gaya_logo.png",
-		company: "SUTD",
+		company: "SUTD United Research Opportunity Project",
 		position: "Student Assistant",
 		start: new Date("Mar 2014"),
 		end: new Date("Jun 2014"),
