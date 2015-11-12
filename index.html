@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luccan Ryanata's Resume Page">
+  <meta name="author" content="Luccan Ryanata">
+
+  <title>Welcome</title>
+  <link rel="SHORTCUT ICON" href="./img/favicon.ico">
+
+  <!-- Bootstrap Core CSS -->
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- JQTimeline CSS -->
+  <link href="./css/jqtimeline.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="./css/navbar-template.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  
+  <!-- google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+      <div class="container topnav">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand topnav" href="./index.html#"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown special-dropdown">
+					<a href="javascript:" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-forms"><li>
+							<div class="row lowvpadding">
+								<div class="col-xs-8">Property:</div>
+								<div class="col-xs-4">Weight:</div>
+							</div>
+							<div id="sort-dropdown-content">
+								
+							</div>
+							<li role="separator" class="divider"></li>
+							<button id="sort-delete-btn" class="btn"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true" style="color: red;"></span></button>
+							<button id="sort-add-btn" class="btn"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="color: green;"></span></button>
+							<button id="sort-submit-btn" class="btn">Submit</button>
+						</li></div>
+					</ul>
+				</li>
+				<li><a href="./index.html#about">About</a></li>
+				<li><a href="./index.html#contact">Contact</a></li>
+			</ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div class="content">
+		<div class="container">
+			<div id="myTimeline"></div>	
+			
+			<div id="timelineCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+				<!-- Indicators -->
+				<ol id="timelineCarouselIndicator" class="carousel-indicators">
+
+				</ol>
+				
+				<!-- Wrapper for slides -->
+				<div id="timelineCarouselInner" class="carousel-inner" role="listbox">
+
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#timelineCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#timelineCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<a id="about"></a>
+	<div class="content-alt">
+		<div class="container">
+		<h1>About This Page</h1>
+		<p>
+		This page is an online resume.<br/>
+		The timeline shows the full list of achievements and projects I have done so far.<br/>
+		By clicking on them, it will show the details of the item you have selected.<br/>
+		<br/>
+		The main highlight of the page is the sorting capability:<br/>
+		You can click on the sort dropdown and add up to 5 properties you care about.<br/>
+		Of course, you can assign different weights for each properties.<br/>
+		The page will then refresh, showing the most relevant item first.<br/>
+		You can check its relevance by hovering over the carousel information tab (that is, the small dots on the slider).<br/>
+		The whiter the dot is, the higher the relevance of that particular item.<br/>
+		<br/>
+		Scope refers to how much of the project relies on (one or more) of the properties selected.<br/>
+		Lower scope means that the property plays a less important role on this particular item.<br/>
+		An item can have a high scope but low relevance when the project has a low complexity.<br/>
+		For example, a simple bootstrap demo page can have 100% scope for webdev, but only counts as being 5% relevant.<br/>
+		<br/>
+		This page is powered by Bootstrap, FontAwesome, JQuery, jqtimeline, and subtlepatterns.<br/>
+		And of course, github, for allowing me to host this mini project.<br/>
+		</p>
+		</div>
+	</div>
+	
+	<a id="contact"></a>
+	<div class="content">
+		<div class="container">
+			<h1>Contact Information</h1>
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="https://www.facebook.com/luccan.ryanata"><i class="fa fa-facebook-square fa-3x"></i></a>
+					<a href="https://sg.linkedin.com/in/luccanryanata"><i class="fa fa-linkedin-square fa-3x"></i></a>
+					<a href="https://github.com/luccan"><i class="fa fa-github-square fa-3x"></i></a>
+				</div>
+			</div>
+			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:luccan.ryanata@gmail.com">luccan.ryanata@gmail.com</span></a><br />
+		</div>
+	</div>
+	
+	<!-- Footer -->
+    <footer>
+		<div class="container">
+			<div class="row">
+				<p class="small">Copyright &copy; Luccan Ryanata All Rights Reserved</p>
+			</div>
+		</div>
+    </footer>
+	
+	<!-- jQuery -->
+	<script src="./js/jquery.min.js"></script>
+	<!-- load data -->
+	<script src="./js/data.js"></script>
+	<script src="./js/relevance-relations.js"></script>
+	<script src="./js/engine.js"></script>
+	<!-- jqtimeline -->
+	<script src="./js/jqtimeline.js"></script>
+	
+	<script type="text/javascript">
+		/* Sort Dropdown that does not close when inside is clicked */
+		$('li.dropdown.special-dropdown a').on('click', function (event) {
+			$(this).parent().toggleClass('open');
+		});
+		
+		$('body').on('click', function (e) {
+			if (!$('li.dropdown.special-dropdown').is(e.target) 
+				&& $('li.dropdown.special-dropdown').has(e.target).length === 0 
+				&& $('.open').has(e.target).length === 0
+			) {
+				$('li.dropdown.special-dropdown').removeClass('open');
+			}
+		});
+	
+		/* jqtimeline */
+		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(4*12));
+		if (gapsize < 9){
+			$('#myTimeline').html('Please load in wider screen to view timeline.');
+		} else {
+			var tl = $('#myTimeline').jqtimeline({
+						events : timeline_data,
+						numYears:4,
+						startYear:2012,
+						gap:gapsize,
+						click:function(e,event){
+							$('#timelineCarousel').carousel(event.id);
+							console.log(event);
+						}
+					});
+		}
+	</script>
+	
+	
+	
+	
+	
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

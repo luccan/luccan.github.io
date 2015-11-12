@@ -1,0 +1,92 @@
+/* overflows is to allow background to move and to prevent modal from making scrollbar disappear */
+.nopadding { padding: 0px !important; }
+.lowhpadding { padding: 0 2px 0 2px !important; }
+.lowvpadding { padding: 2px 0 2px 0 !important; }
+.modal { overflow-y: auto; }
+.modal-open { overflow: auto; }
+.modal-open[style] { padding-right: 0px !important; }
+.modal-body { padding: 0px; }
+.modal-header { background-color: black; }
+
+.btn .glyphicon { top: 2px; }
+
+.tooltip-inner {
+	background-color: rgba(255,255,255,0.95);
+	color: black;
+	white-space:pre-wrap; /* enable \n to break for tooltip */
+}
+.tooltip.top .tooltip-arrow{
+	border-top-color: rgba(255,255,255,0.95);
+}
+
+.dropdown-forms {
+	position: relative;
+	padding: 5px;
+	width: 300px;
+}
+
+.carousel .item img{
+	border:1px solid white;
+	border-radius: 4px;
+	width: 60%;
+	position: relative;
+}
+.carousel-control {
+	opacity: 0;
+	max-width: 50px;
+}
+.carousel-caption {
+	background-color: transparent;
+	max-width: 40%;
+	position: absolute;
+	text-align: right;
+	left: auto;
+	right: 0px;
+	bottom: auto;
+	top: 0px;
+	padding: 0px 20px 20px 20px;
+}
+.carousel-indicators {
+	position: relative;
+}
+	.carousel-indicators li {
+		border-color: #666666;
+	}
+		.carousel-indicators .active>li{
+			background-color: transparent;
+			border-color: white;
+			border-width: 3px;
+			width: 12px;
+			height: 12px;
+			margin: 0px;
+		}
+		.carousel-indicators a.active{
+			background-color: transparent;
+		}
+
+.content {
+	padding: 80px 0 20px 0;
+	background-color:rgba(0,0,0,0.2);
+	border: none;
+	color: white;
+}
+.content-alt {
+	padding: 80px 0 20px 0;
+	background-color:rgba(255,255,255,0.2);
+	border: none;
+	color: white;
+}
+
+.gt-timeline {
+	text-shadow: none;
+}
+	.gt-timeline div.e-message {
+		min-width: 15%;
+		border-radius: 3px;
+		z-index: 200;
+		background-color: #666666;
+	}
+	.gt-timeline div.e-message .msg:hover{
+		border-radius: 3px;
+		background-color: #aaaaaa;
+	}

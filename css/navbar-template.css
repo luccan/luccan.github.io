@@ -1,0 +1,56 @@
+body {
+  background: url(../img/dark_mosaic.png);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6{
+  font-family: 'Calibri'
+}
+
+.topnav,
+.navbar-brand.topnav {
+	background-color: #000000;
+	color: white;
+}
+
+.nav>li{
+	/*text-align: left;*/
+}
+
+.navbar-default .navbar-nav li a { color: white; }
+.navbar-default .navbar-nav li a:hover { color: darkgrey; }
+.navbar-default .navbar-nav li a:focus { color: darkgrey; }
+
+/* Selected Navbar Item */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	color: darkgrey;
+	background-color: #ffffff;
+}
+
+.dropdown-menu {
+	background-color: #ffffff;
+}
+
+/* dropdown item color*/
+.navbar-nav>li>.dropdown-menu{
+	text-align: left;
+	color: black;
+}
+@media (max-width: 767px){
+	.navbar-nav .open .dropdown-menu{
+		background-color: white;
+	}
+}
+
+footer {
+	padding: 10px 0;
+	background-color: #000000;
+	color: white;
+}
+
+p.copyright { margin: 15px 0 0; }
