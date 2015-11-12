@@ -37,14 +37,23 @@
 }
 .carousel-caption {
 	background-color: transparent;
-	max-width: 40%;
-	position: absolute;
-	text-align: right;
-	left: auto;
-	right: 0px;
-	bottom: auto;
-	top: 0px;
-	padding: 0px 20px 20px 20px;
+	text-align: left;
+	position: relative;
+	left: 0px;
+	right: auto;
+}
+@media(min-width:764px){
+	.carousel-caption {
+		background-color: transparent;
+		max-width: 40%;
+		position: absolute;
+		text-align: right;
+		left: auto;
+		right: 0px;
+		bottom: auto;
+		top: 0px;
+		padding: 0px 20px 20px 20px;
+	}
 }
 .carousel-indicators {
 	position: relative;
@@ -77,6 +86,9 @@
 	color: white;
 }
 
+#myTimeline {
+	padding-bottom: 20px;
+}
 .gt-timeline {
 	text-shadow: none;
 }
