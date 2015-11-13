@@ -9,7 +9,13 @@ var data = [
 		start: new Date("May 2015"),
 		end: new Date("Sep 2015"),
 		desc: "Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.",
-		details: "",
+		details: "Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.\
+			Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.\
+			Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.\
+			Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.\
+			Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.\
+			Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.\
+			Develop an Educational Financial Website in a team of 2 interns. Also, Implemented Optimization Algorithm in SSMS.",
 		priority: 45,
 		relevance: {
 			ssms: 10,

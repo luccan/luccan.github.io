@@ -25,6 +25,22 @@
 	width: 300px;
 }
 
+.carousel-caption-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.carousel .panel{
+	padding: 10px;
+	overflow-y: auto;
+	height: 50%;
+	width: 100%;
+	text-align: left;
+	text-shadow: none;
+	color: black;
+	bottom: 0%;
+	margin: 0px;
+}
 .carousel .item img{
 	border:1px solid white;
 	border-radius: 4px;
@@ -33,7 +49,7 @@
 }
 .carousel-control {
 	opacity: 0;
-	max-width: 50px;
+	width: 40px;
 }
 .carousel-caption {
 	background-color: transparent;
@@ -41,18 +57,23 @@
 	position: relative;
 	left: 0px;
 	right: auto;
+	height: 100%;
+	padding: 0px;
 }
 @media(min-width:764px){
 	.carousel-caption {
 		background-color: transparent;
-		max-width: 40%;
+		width: 40%;
 		position: absolute;
 		text-align: right;
 		left: auto;
 		right: 0px;
 		bottom: auto;
 		top: 0px;
-		padding: 0px 20px 20px 20px;
+		padding: 0px 40px 0px 10px; /* for carousel controls */
+	}
+	.carousel .panel{
+		position: absolute;
 	}
 }
 .carousel-indicators {

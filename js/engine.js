@@ -257,11 +257,15 @@ function display_model_str(data, is_active){
 	var str = '<div class="item<IS_ACTIVE>">\
 					<img src="<IMG_URL>" alt="<TITLE>">\
 					<div class="carousel-caption">\
-						<p><COMPANY></p>\
-						<h1><TITLE></h1>\
-						<p><POSITION> <START>-<END></p>\
-						<b><DESC></b>\
-						<p><DET></p>\
+						<div class="carousel-caption-content">\
+							<p><COMPANY></p>\
+							<h1><TITLE></h1>\
+							<p><POSITION> <START>-<END></p>\
+							<b><DESC></b>\
+							<div class="panel">\
+								<p><DET></p>\
+							</div>\
+						</div>\
 					</div>\
 				</div>';
 	if (is_active){
@@ -277,7 +281,7 @@ function display_model_str(data, is_active){
 	str = str.replace('<START>',aMonths[data.start.getMonth()] + ' ' + data.start.getFullYear());
 	str = str.replace('<END>',aMonths[data.end.getMonth()] + ' ' + data.end.getFullYear());
 	str = str.replace('<DESC>',data.desc);
-	str = str.replace('<DET>',data.det);
+	str = str.replace('<DET>',data.details);
 	//console.log(str);
 	return str;
 }
