@@ -44,13 +44,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand topnav" href="./index.html#"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
+          <a class="navbar-brand topnav" href="javascript:$('#home').goTo();"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown special-dropdown">
-					<a href="javascript:" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
+					<a href="javascript:$('#home').goTo();" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<div class="dropdown-forms"><li>
 							<div class="row lowvpadding">
@@ -67,13 +67,14 @@
 						</li></div>
 					</ul>
 				</li>
-				<li><a href="./index.html#about">About</a></li>
-				<li><a href="./index.html#contact">Contact</a></li>
+				<li><a href="javascript:$('#about').goTo();">About</a></li>
+				<li><a href="javascript:$('#contact').goTo();">Contact</a></li>
 			</ul>
         </div>
       </div>
     </nav>
 	
+	<a id="home"></a>
 	<div class="content">
 		<div class="container">
 			<div id="myTimeline"></div>	
@@ -176,6 +177,16 @@
 				$('li.dropdown.special-dropdown').removeClass('open');
 			}
 		});
+		
+		/* Scroll animation*/
+		(function($) {
+			$.fn.goTo = function() {
+				$('html, body').animate({
+					scrollTop: $(this).offset().top + 'px'
+				}, 'fast');
+				return this; // for chaining...
+			}
+		})(jQuery);
 	
 		/* jqtimeline */
 		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(4*12));
