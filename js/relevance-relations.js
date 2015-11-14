@@ -2,8 +2,19 @@ var relevance_relations = [
 	{
 		parent: "database",
 		child: {
-			sql: 10,
-			tableau: 7
+			sql: 10
+		}
+	},
+	{
+		parent: "algorithm",
+		child: {
+			simulated_annealing: 9
+		}
+	},
+	{
+		parent: "optimization",
+		child: {
+			simulated_annealing: 10
 		}
 	},
 	{
@@ -16,7 +27,8 @@ var relevance_relations = [
 	{
 		parent: "datavis",
 		child: {
-			tableau: 6
+			tableau: 6,
+			matlab: 2
 		}
 	},
 	{
@@ -33,11 +45,20 @@ var relevance_relations = [
 		}
 	},
 	{
+		parent: "userinterface",
+		child: {
+			telerik: 10,
+			devexpress: 10,
+			intersoft: 10
+		}
+	},
+	{
 		parent: "userexperience",
 		child: {
 			webdev: 3,
 			mobiledev: 3,
-			gamedev: 3
+			gamedev: 3,
+			userinterface: 3
 		}
 	},
 	{
@@ -45,6 +66,12 @@ var relevance_relations = [
 		child: {
 			netconfig: 5,
 			wireshark: 5
+		}
+	},
+	{
+		parent: "teamwork",
+		child: {
+			vcs: 10
 		}
 	},
 	
@@ -201,6 +228,12 @@ var relevance_relations = [
 			hyperv: 10,
 			powershell: 10,
 			batchscript: 5
+		}
+	},
+	{
+		parent: "telerik",
+		child: {
+			kendoui: 10
 		}
 	},
 	{

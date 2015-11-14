@@ -263,7 +263,10 @@ function display_model_str(data, is_active){
 							<p><POSITION> <START>-<END></p>\
 							<b><DESC></b>\
 							<div class="panel">\
-								<p><DET></p>\
+								<DET>\
+								<br/>\
+								<p style="line-height: 1em;">Focus areas:</p>\
+								<RELEVANCE>\
 							</div>\
 						</div>\
 					</div>\
@@ -282,6 +285,11 @@ function display_model_str(data, is_active){
 	str = str.replace('<END>',aMonths[data.end.getMonth()] + ' ' + data.end.getFullYear());
 	str = str.replace('<DESC>',data.desc);
 	str = str.replace('<DET>',data.details);
+	var relevance_str = ''
+	for (var rel in data.relevance){
+		relevance_str += '<li>'+rel+'</li>';
+	}
+	str = str.replace('<RELEVANCE>',relevance_str);
 	//console.log(str);
 	return str;
 }
