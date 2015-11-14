@@ -4,7 +4,7 @@ var data = [
 	{
 		title: "Financial Website Project",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "Project Intern",
 		start: new Date("5 May 2015"),
@@ -32,7 +32,7 @@ var data = [
 	{
 		title: "Optimization Research",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "Project Intern",
 		start: new Date("01 Jul 2015"),
@@ -55,7 +55,7 @@ var data = [
 	{
 		title: "System Administrator",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "Part Time Employee",
 		start: new Date("28 Oct 2014"),
@@ -75,7 +75,7 @@ var data = [
 	{
 		title: "Software Test Automation",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/amd_logo.png",
 		company: "Advanced Micro Devices, Inc.",
 		position: "Summer Intern",
 		start: new Date("05 May 2014"),
@@ -103,7 +103,7 @@ var data = [
 	{
 		title: "Margin Trade System Developer",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "Part Time Employee",
 		start: new Date("21 Sep 2013"),
@@ -122,7 +122,7 @@ var data = [
 	{
 		title: "Appsilient Framework Developer",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "Intern",
 		start: new Date("15 Feb 2013"),
@@ -142,7 +142,7 @@ var data = [
 	{ //.....................................................
 		title: "Restaurant/Ballroom Waiter",
 		type: "work",
-		imgurl: "./img/work_logo.png",
+		imgurl: "./img/adecco_logo.png",
 		company: "Adecco Personnel Pte Ltd",
 		position: "Part Time Employee",
 		start: new Date("10 Jan 2013"),
@@ -160,7 +160,7 @@ var data = [
 	{
 		title: "SUTD PADI Website",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/padi_logo.png",
 		company: "SUTD PADI",
 		position: "Developer",
 		start: new Date("01 Jul 2015"),
@@ -179,7 +179,7 @@ var data = [
 	{
 		title: "The Heist",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/theheist_logo.png",
 		company: "SUTD Game Design Club",
 		position: "Props Engineer",
 		start: new Date("01 Jun 2014"),
@@ -197,7 +197,7 @@ var data = [
 	{
 		title: "UROP: Tracking People in Smart City",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/smartcity_logo.png",
 		company: "SUTD United Research Opportunity Project",
 		position: "Student Assistant",
 		start: new Date("09 Mar 2014"),
@@ -214,7 +214,7 @@ var data = [
 	{
 		title: "SAJC Graduation Night 2012",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/sajc_logo.png",
 		company: "SAJC",
 		position: "Sponsorship Committee",
 		start: new Date("01 Sep 2012"),
@@ -230,7 +230,7 @@ var data = [
 	{
 		title: "Hot-Tiles",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/hottiles_logo.png",
 		company: "SUTD",
 		position: "Developer",
 		start: new Date("19 Jan 2015"),
@@ -246,7 +246,7 @@ var data = [
 	{
 		title: "Travelkat",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/travelkat_logo.png",
 		company: "SUTD",
 		position: "Developer",
 		start: new Date("14 Sep 2014"),
@@ -262,11 +262,11 @@ var data = [
 	{
 		title: "Okathello",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/okathello_logo.png",
 		company: "SUTD",
 		position: "Developer",
-		start: new Date("17 Feb 2014"),
-		end: new Date("25 Apr 2014"),
+		start: new Date("14 Sep 2014"),
+		end: new Date("15 Dec 2014"),
 		desc: "Created a modified othello hardware game in a group of 3 undergraduates using Multisim.",
 		details: "<p>Learned to appreciate MOSFETs, Logic Gates, and semiconductor companies that make modern age developers' life much better.</p>\
 					<p>Credits to prof. <a href=\"http://www.okakurniawan.net/\" target=\"_blank\">Oka</a> for the kind guidance and also, as the inspiration for the name of the game.</p>",
@@ -279,7 +279,7 @@ var data = [
 	{
 		title: "Teslar",
 		type: "project",
-		imgurl: "./img/project_logo.png",
+		imgurl: "./img/teslar_logo.png",
 		company: "SUTD",
 		position: "Developer",
 		start: new Date("16 Sep 2013"),
@@ -299,7 +299,7 @@ var data = [
 	{
 		title: "DBS Digital Gamejam 2014",
 		type: "achievement",
-		imgurl: "./img/achievement_logo.png",
+		imgurl: "./img/dbsgamejam_logo.png",
 		company: "DBS",
 		position: "3rd Prize",
 		start: new Date("12 Dec 2014"),
@@ -314,7 +314,7 @@ var data = [
 	{
 		title: "SAJC Book Prize for H2 Computing",
 		type: "achievement",
-		imgurl: "./img/achievement_logo.png",
+		imgurl: "./img/sajc_logo.png",
 		company: "SAJC",
 		position: "Winner",
 		start: new Date("14 Apr 2012"),
@@ -330,7 +330,7 @@ var data = [
 	{
 		title: "Hackathon@SG50 Smart Nation",
 		type: "achievement",
-		imgurl: "./img/achievement_logo.png",
+		imgurl: "./img/hackathonsg_logo.png",
 		company: "Hackathon@SG",
 		position: "Participant",
 		start: new Date("25 Jul 2015"),
@@ -347,7 +347,7 @@ var data = [
 	{
 		title: "Cyberdefender Discovery Camp 2012",
 		type: "achievement",
-		imgurl: "./img/achievement_logo.png",
+		imgurl: "./img/cyberdefender_logo.png",
 		company: "DSTA",
 		position: "Participant",
 		start: new Date("06 Jun 2012"),
