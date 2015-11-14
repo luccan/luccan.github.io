@@ -207,7 +207,8 @@ var data = [
 		priority: 10,
 		relevance: {
 			java: 10,
-			geolocation: 8
+			geolocation: 8,
+			algorithm: 1
 		}
 	},
 	{
@@ -254,7 +255,8 @@ var data = [
 		details: "<p>Initial exposure to eclipseadt and RANSAC image recognition.</p>",
 		priority: 5,
 		relevance: {
-			eclipseadt: 3
+			eclipseadt: 3,
+			ransac: 1
 		}
 	},
 	{

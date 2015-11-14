@@ -8,7 +8,8 @@ var relevance_relations = [
 	{
 		parent: "algorithm",
 		child: {
-			simulated_annealing: 9
+			simulated_annealing: 9,
+			ransac: 10
 		}
 	},
 	{
