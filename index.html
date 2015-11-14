@@ -44,13 +44,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand topnav" href="javascript:$('#home').goTo();"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
+          <a class="navbar-brand topnav" onclick="javascript:$('#home').goTo();"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown special-dropdown">
-					<a href="javascript:$('#home').goTo();" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
+					<a onclick="javascript:$('#home').goTo();" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<div class="dropdown-forms"><li>
 							<div class="row lowvpadding">
@@ -67,8 +67,8 @@
 						</li></div>
 					</ul>
 				</li>
-				<li><a href="javascript:$('#about').goTo();">About</a></li>
-				<li><a href="javascript:$('#contact').goTo();">Contact</a></li>
+				<li><a onclick="javascript:$('#about').goTo();">About</a></li>
+				<li><a onclick="javascript:$('#contact').goTo();">Contact</a></li>
 			</ul>
         </div>
       </div>
@@ -141,7 +141,7 @@
 					<a href="https://github.com/luccan"><i class="fa fa-github-square fa-3x"></i></a>
 				</div>
 			</div>
-			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:luccan.ryanata@gmail.com">luccan.ryanata@gmail.com</span></a><br />
+			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:luccan.ryanata@gmail.com">luccan.ryanata@gmail.com</a>
 		</div>
 	</div>
 	
@@ -204,6 +204,7 @@
 						}
 					});
 		}
+		console.log('yesh');
 	</script>
 	
 	

@@ -85,6 +85,7 @@
 		}
 	.gt-timeline div.event:hover{
 		background-position: -27px -84px;
+		z-index: 3;
 	}
 
 	.gt-timeline div.horizontal-line{

@@ -129,7 +129,7 @@ var relevance_relations = [
 	{
 		parent: "cpp",
 		child: {
-			ninetythreek: 10
+			ninety_three_k: 10
 		}
 	},
 	{
@@ -207,7 +207,7 @@ var relevance_relations = [
 		parent: "semiconductor",
 		child: {
 			credence: 10,
-			ninetythreek: 10
+			ninety_three_k: 10
 		}
 	}
 ];

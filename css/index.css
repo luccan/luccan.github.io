@@ -1,3 +1,6 @@
+body {
+	overflow-x: hidden;
+}
 /* overflows is to allow background to move and to prevent modal from making scrollbar disappear */
 .nopadding { padding: 0px !important; }
 .lowhpadding { padding: 0 2px 0 2px !important; }
@@ -50,6 +53,7 @@
 .carousel-control {
 	opacity: 0;
 	width: 40px;
+	z-index: 100; /* above other div */
 }
 .carousel-caption {
 	background-color: transparent;

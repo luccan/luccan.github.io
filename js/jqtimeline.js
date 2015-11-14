@@ -185,7 +185,7 @@
 					for (var i = 0; i < neighborEvents.length; i++) {
 						var $temp = $(neighborEvents[i]);
 						var oData = $temp.data('event');
-						strToolTip = strToolTip + '<div class="msg" id="msg_'+oData.id+'">'+aMonths[oData.on.getMonth()]+' '+oData.on.getFullYear()+' : '+ oData.name +'</div>';
+						strToolTip = strToolTip + '<div class="msg" id="msg_'+oData.id+'">'+oData.on.getDate()+' '+aMonths[oData.on.getMonth()]+' '+oData.on.getFullYear()+' : '+ oData.name +'</div>';
 					};
 					_this._showToolTip(nLeft,strToolTip,eObj.id,false);
 				}
