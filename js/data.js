@@ -237,7 +237,7 @@ var data = [
 		end: new Date("16 Apr 2015"),
 		desc: "Developed a multiplayer android arcade game using libgdx.",
 		details: "<p>Initial exposure to libgdx and android studio.</p>",
-		priority: 15,
+		priority: 8,
 		relevance: {
 			libgdx: 10,
 			androidstudio: 10
@@ -270,7 +270,7 @@ var data = [
 		desc: "Created a modified othello hardware game in a group of 3 undergraduates using Multisim.",
 		details: "<p>Learned to appreciate MOSFETs, Logic Gates, and semiconductor companies that make modern age developers' life much better.</p>\
 					<p>Credits to prof. <a href=\"http://www.okakurniawan.net/\" target=\"_blank\">Oka</a> for the kind guidance and also, as the inspiration for the name of the game.</p>",
-		priority: 8,
+		priority: 10,
 		relevance: {
 			gamedev: 10,
 			multisim: 10
@@ -288,7 +288,7 @@ var data = [
 		details: "<p>First major project in SUTD, gained initial exposure to Arduino programming and electrical assemblies.</p>\
 					<p>Also, learned a great deal of design, prototyping, and manufacturing of an actual product.</p>\
 					<p>Picked up Premiere Pro, Photoshop, Circuitry, Renewable Energy, and great teammates.</p>",
-		priority: 12,
+		priority: 15,
 		relevance: {
 			arduino: 5,
 			premiere_pro: 4
