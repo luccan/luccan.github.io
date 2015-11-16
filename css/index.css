@@ -11,6 +11,10 @@ body {
 .modal-body { padding: 0px; }
 .modal-header { background-color: black; }
 
+.caret.caret-reversed {
+    transform: rotate(180deg);
+}
+
 .btn .glyphicon { top: 2px; }
 
 .tooltip-inner {
@@ -40,9 +44,16 @@ body {
 	width: 100%;
 	text-align: left;
 	text-shadow: none;
-	color: black;
+	
+	color: white;
+	background-color: transparent;
+	border-color: white;
+	
 	bottom: 0%;
 	margin: 0px;
+}
+.carousel .panel-hidden{
+	display: none;
 }
 .carousel p{
 	margin-bottom: 5px

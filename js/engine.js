@@ -253,7 +253,7 @@ $('#sort-submit-btn').click(function(e){
 */
 var aMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function display_model_str(data, is_active){
+function display_model_str(data, id){
 	var str = '<div class="item<IS_ACTIVE>">\
 					<img src="<IMG_URL>" alt="<TITLE>">\
 					<div class="carousel-caption">\
@@ -262,7 +262,15 @@ function display_model_str(data, is_active){
 							<h1><TITLE></h1>\
 							<p><POSITION> <START>-<END></p>\
 							<b><DESC></b>\
-							<div class="panel">\
+							<br/>\
+							<p style="text-align: right;">\
+							<a id="<DETAILS_ID>" href="javascript:" onclick="javascript:$(\'#<PANEL_ID>\').toggleClass(\'panel-hidden\');\
+								$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');">See Details<span class="caret"></span></a></p>\
+							<br/>\
+							<div id="<PANEL_ID>" class="panel panel-hidden">\
+								<p style="text-align: right;">\
+								<a href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
+									$(\'#<PANEL_ID>\').toggleClass(\'panel-hidden\');">Hide Details<span class="caret caret-reversed"></span> </a></p>\
 								<DET>\
 								<br/>\
 								<p style="line-height: 1em;">Focus areas:</p>\
@@ -271,7 +279,7 @@ function display_model_str(data, is_active){
 						</div>\
 					</div>\
 				</div>';
-	if (is_active){
+	if (id==0){
 		str = str.replace('<IS_ACTIVE>',' active');
 	} else {
 		str = str.replace('<IS_ACTIVE>','');
@@ -284,13 +292,19 @@ function display_model_str(data, is_active){
 	str = str.replace('<START>',aMonths[data.start.getMonth()] + ' ' + data.start.getFullYear());
 	str = str.replace('<END>',aMonths[data.end.getMonth()] + ' ' + data.end.getFullYear());
 	str = str.replace('<DESC>',data.desc);
+	str = str.replace('<PANEL_ID>','panel'+id.toString());
+	str = str.replace('<PANEL_ID>','panel'+id.toString());
+	str = str.replace('<PANEL_ID>','panel'+id.toString());
+	str = str.replace('<DETAILS_ID>','detailspanel'+id.toString());
+	str = str.replace('<DETAILS_ID>','detailspanel'+id.toString());
+	str = str.replace('<DETAILS_ID>','detailspanel'+id.toString());
 	str = str.replace('<DET>',data.details);
 	var relevance_str = ''
 	for (var rel in data.relevance){
 		relevance_str += '<li>'+rel+'</li>';
 	}
 	str = str.replace('<RELEVANCE>',relevance_str);
-	//console.log(str);
+	console.log(str);
 	return str;
 }
 
@@ -300,7 +314,7 @@ for (var i = 0; i < data_score.length; i++) {
 	var score_upper = Math.min(data_score[i].score, 100).toFixed(0);
 	var raw_relevance = data_score[i].relevance.toFixed(0);
 	var active = '';
-	carousel_content_str += display_model_str(data[data_score[i].data], i==0);
+	carousel_content_str += display_model_str(data[data_score[i].data], i);
 	if (i==0){
 		active = ' class="active" ';
 	}
