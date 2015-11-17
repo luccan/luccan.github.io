@@ -44,13 +44,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand topnav" onclick="javascript:$('#home').goTo();"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
+          <a class="navbar-brand topnav" href="javascript:" onclick="javascript:$('#home').goTo();"><!--img src="./img/logo.png" alt="logo"></img-->Home</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown special-dropdown">
-					<a onclick="javascript:$('#home').goTo();" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
+					<a id="navbar-sort" class="dropdown-toggle" href="javascript:" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<div class="dropdown-forms"><li>
 							<div class="row lowvpadding">
@@ -67,8 +67,8 @@
 						</li></div>
 					</ul>
 				</li>
-				<li><a onclick="javascript:$('#about').goTo();">About</a></li>
-				<li><a onclick="javascript:$('#contact').goTo();">Contact</a></li>
+				<li><a href="javascript:" onclick="javascript:$('#about').goTo();">About</a></li>
+				<li><a href="javascript:" onclick="javascript:$('#contact').goTo();">Contact</a></li>
 			</ul>
         </div>
       </div>
@@ -105,29 +105,29 @@
 	
 	<a id="about"></a>
 	<div class="content-alt">
-		<div class="container">
-		<h1>About This Page</h1>
-		<p>
-		This page is an online resume.<br/>
-		The timeline shows the full list of achievements and projects I have done so far.<br/>
-		By clicking on them, it will show the details of the item you have selected.<br/>
-		<br/>
-		The main highlight of the page is the sorting capability:<br/>
-		You can click on the sort dropdown and add up to 5 properties you care about.<br/>
-		Of course, you can assign different weights for each properties.<br/>
-		The page will then refresh, showing the most relevant item first.<br/>
-		You can check its relevance by hovering over the carousel information tab (that is, the small dots on the slider).<br/>
-		The whiter the dot is, the higher the relevance of that particular item.<br/>
-		<br/>
-		Scope refers to how much of the project relies on (one or more) of the properties selected.<br/>
-		Lower scope means that the property plays a less important role on this particular item.<br/>
-		An item can have a high scope but low relevance when the project has a low complexity.<br/>
-		For example, a simple bootstrap demo page can have 100% scope for webdev, but only counts as being 5% relevant.<br/>
-		<br/>
-		This page is powered by Bootstrap, FontAwesome, JQuery, jqtimeline, and subtlepatterns.<br/>
-		And of course, github, for allowing me to host this mini project.<br/>
-		</p>
-		</div>
+		<div class="container"><div class="row">
+			<div class="col-md-9">
+				<h1>About This Page</h1>
+				<p class="lead">This page is a smart resume. The idea was to have a dynamic resume to satisfy various employers.</p>
+				<br/>
+				
+				<p class="lead">The main highlight of this page is its <a href="javascript:" onclick="javascript:$('#navbar-sort').addClass('highlight').delay(600).queue(function() {$(this).removeClass('highlight');$(this).dequeue();} );">sorting capability</a>:</p>
+				<li>You can click on the sort dropdown and add up to 5 properties you care about.</li>
+				<li>Of course, you can assign different importance for each properties.</li>
+				<br/>
+				
+				<p class="lead">Relevance and Scope</p>
+				<li>You can hover over the dots on the carousel.</li>
+				<li>The whiter the dot is, the higher the relevance of that particular item to the properties you selected.</li>
+				Scope refers to how much of the project relies on (one or more) of the properties selected.<br/>
+				An item can have a high scope but low relevance when the project has a low complexity.<br/>
+				For example, a simple bootstrap demo page can have 100% scope for webdev, but only counts as being 5% relevant.</p>
+				<br/>
+				
+				<p>Powered by Bootstrap, FontAwesome, JQuery, jqtimeline, and subtlepatterns. <br/>
+				And of course, github, for allowing me to host this mini project.</p>
+			</div>
+		</div></div>
 	</div>
 	
 	<a id="contact"></a>

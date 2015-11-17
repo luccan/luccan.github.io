@@ -267,7 +267,7 @@ function display_model_str(data, id){
 							<a id="<DETAILS_ID>" href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
 								$(\'#<PANEL_ID>\').slideToggle(\'slow\');">See Details<span class="caret"></span></a></p>\
 							<br/>\
-							<div id="<PANEL_ID>" class="panel panel-hidden">\
+							<div id="<PANEL_ID>" class="panel" style="display:none;">\
 								<p style="text-align: right;">\
 								<a href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
 									$(\'#<PANEL_ID>\').slideToggle(\'slow\');">Hide Details<span class="caret caret-reversed"></span> </a></p>\
