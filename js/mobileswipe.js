@@ -1,5 +1,5 @@
 function swipedetect(el, callback){
-	console.log(el);
+	//console.log(el);
 	var touchsurface = el,
 	swipedir,
 	startX,
