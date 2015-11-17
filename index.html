@@ -206,7 +206,30 @@
 		}
 	</script>
 	
+	<!-- jquery.mobile js -->
+	<script> <!--binding to give permission for jquery.mobile -->
+		$(document).bind('mobileinit',function(){
+			$.mobile.changePage.defaults.changeHash = false;
+			$.mobile.hashListeningEnabled = false;
+			$.mobile.pushStateEnabled = false;
+		});
+	</script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
 	
+	<script>
+		/* Carousel Mobile Swipe Support */
+		$(document).ready(function() {
+			if(typeof window.orientation !== 'undefined'){
+			console.log('lol');
+				$("#timelineCarousel").swiperight(function() {
+					$(this).carousel('prev');
+				});
+				$("#timelineCarousel").swipeleft(function() {
+					$(this).carousel('next');
+				});
+			}
+		});
+	</script>
 	
 	
 	

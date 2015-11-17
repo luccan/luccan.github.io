@@ -304,7 +304,7 @@ function display_model_str(data, id){
 		relevance_str += '<li>'+rel+'</li>';
 	}
 	str = str.replace('<RELEVANCE>',relevance_str);
-	console.log(str);
+	//console.log(str);
 	return str;
 }
 
