@@ -264,13 +264,13 @@ function display_model_str(data, id){
 							<b><DESC></b>\
 							<br/>\
 							<p style="text-align: right;">\
-							<a id="<DETAILS_ID>" href="javascript:" onclick="javascript:$(\'#<PANEL_ID>\').toggleClass(\'panel-hidden\');\
-								$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');">See Details<span class="caret"></span></a></p>\
+							<a id="<DETAILS_ID>" href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
+								$(\'#<PANEL_ID>\').slideToggle(\'slow\');">See Details<span class="caret"></span></a></p>\
 							<br/>\
 							<div id="<PANEL_ID>" class="panel panel-hidden">\
 								<p style="text-align: right;">\
 								<a href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
-									$(\'#<PANEL_ID>\').toggleClass(\'panel-hidden\');">Hide Details<span class="caret caret-reversed"></span> </a></p>\
+									$(\'#<PANEL_ID>\').slideToggle(\'slow\');">Hide Details<span class="caret caret-reversed"></span> </a></p>\
 								<DET>\
 								<br/>\
 								<p style="line-height: 1em;">Focus areas:</p>\

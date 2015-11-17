@@ -49,7 +49,7 @@ body {
 	background-color: transparent;
 	border-color: white;
 	
-	bottom: 0%;
+	top: 50%;
 	margin: 0px;
 }
 .carousel .panel-hidden{
