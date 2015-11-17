@@ -206,24 +206,19 @@
 		}
 	</script>
 	
-<<<<<<< HEAD
 	<!-- Carousel Mobile Swipe Support -->
 	<script src="./js/mobileswipe.js"></script>
 	<script>
 		$(document).ready(function() {
-			if(typeof window.orientation !== 'undefined'){
-				console.log('loaded mobile swipe support!');
-				var el = document.getElementById('timelineCarousel');
-				swipedetect(el, function(swipedir){
-					if(swipedir=='left'){
-						$('#timelineCarousel').carousel('next');
-					} else if(swipedir=='right'){
-						$('#timelineCarousel').carousel('prev');
-					} else {
-						
-					}
-				});
-			}
+			console.log('loaded mobile swipe support!');
+			var el = document.getElementById('timelineCarouselInner');
+			swipedetect(el, function(swipedir){
+				if(swipedir=='left'){
+					$('#timelineCarousel').carousel('next');
+				} else if(swipedir=='right'){
+					$('#timelineCarousel').carousel('prev');
+				}
+			});
 		});
 	</script>
 	
