@@ -81,12 +81,10 @@ body {
 	text-align: left;
 	position: relative;
 	
-	top: 1em;
-	bottom: auto;
 	left: 0px;
 	right: auto;
 	height: 100%;
-	padding: 0px;
+	padding-top: 3em;
 }
 @media(min-width:1200px){
 	.carousel-caption {
