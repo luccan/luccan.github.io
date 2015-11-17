@@ -87,6 +87,9 @@ body {
 	padding-top: 3em;
 }
 @media(min-width:1200px){
+	.carousel .item img{
+		width: 100%;
+	}
 	.carousel-caption {
 		background-color: transparent;
 		width: 40%;
