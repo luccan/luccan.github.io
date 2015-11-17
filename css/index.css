@@ -108,12 +108,16 @@ body {
 	.carousel-indicators li {
 		border-color: #666666;
 	}
+		.carousel-indicators li{
+			width: 14px;
+			height: 14px;
+		}
 		.carousel-indicators .active>li{
 			background-color: transparent;
 			border-color: white;
 			border-width: 3px;
-			width: 12px;
-			height: 12px;
+			width: 16px;
+			height: 16px;
 			margin: 0px;
 		}
 		.carousel-indicators a.active{
