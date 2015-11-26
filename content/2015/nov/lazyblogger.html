@@ -31,13 +31,13 @@
 				
 				<div class="code">
 				<p>
-				&emsp;&lt!-- lazyBlogger --><br/>
-				&emsp;&ltscript src="./js/lazyblogger_layout.js">&lt/script><br/>
-				&emsp;&lt\script><br/>
+				&emsp;&lt;!-- lazyBlogger --><br/>
+				&emsp;&lt;script src="./js/lazyblogger_layout.js">&lt;/script><br/>
+				&emsp;&lt;\script><br/>
 				&emsp;&emsp;$( document ).ready(function(){<br/>
 				&emsp;&emsp;&emsp;lazyblogger_init($("#content"));<br/>
 				&emsp;&emsp;});<br/>
-				&emsp;&lt/script>
+				&emsp;&lt;/script>
 				</p>
 				</div>
 
@@ -47,14 +47,16 @@
 				</p>
 				<div class="code">
 				<p>
-				&ltbody style="display: none;">&ltdiv id="content"><br/>
-				&emsp;&lt!-- your content here --><br/>
-				&lt/div>&ltscript src="../js/lazyblogger.js">&lt/script>&lt/body>
+				&lt;body style="display: none;">&lt;div id="content"><br/>
+				&emsp;&lt;!-- your content here --><br/>
+				&lt;/div>&lt;script src="../js/lazyblogger.js">&lt;/script>&lt;/body>
 				</p>
 				</div>
 
 				<br/>
 				<p class="blog">
+				Unfortunately, due to certain ActiveX restrictions, debugging LazyBlogger locally requires Mozzila Firefor.<br/>
+				But fret not, once it gets pushed to github it will work on chrome and ie as well.<br/>
 				Get it <a href="https://github.com/luccan/LazyBlogger">here</a> and check out the <a href="https://luccan.github.io/LazyBlogger">demo</a>.
 				</p>
 			</div>
