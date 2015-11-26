@@ -20,21 +20,9 @@ for (var i=0;i<url.length;i++){
 document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
-document.body.innerHTML = '<div id="responsive-iframe" style="position: relative; overflow: hidden; height:0px; width:0px;">' + 
-						'<iframe id="myIframe" src="'+iframe_src+'" allowfullscreen="true" style="height:100%; width:100%; position:absolute; top:0px; left:0px;"></iframe>' +
-						'</div>';
+document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" style="height:100%; width:100%;"></iframe>';
 
 var myIframe = document.getElementById('myIframe');
 myIframe.onload = function() {
 	document.body.style["display"] = "block"; //show
-	if (typeof window.orientation !== 'undefined'){
-		document.getElementById("responsive-iframe").style.height = screen.height;
-		document.getElementById("responsive-iframe").style.width = screen.width;
-	} else {
-		document.getElementById("responsive-iframe").style.height = "100%";
-		document.getElementById("responsive-iframe").style.width = "100%";
-	}
-	
-	document.getElementById("responsive-iframe").style.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-	document.getElementById("responsive-iframe").style.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 };
