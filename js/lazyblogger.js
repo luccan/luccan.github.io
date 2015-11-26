@@ -34,4 +34,7 @@ myIframe.onload = function() {
 		document.getElementById("responsive-iframe").style.height = "100%";
 		document.getElementById("responsive-iframe").style.width = "100%";
 	}
+	
+	document.getElementById("responsive-iframe").style.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+	document.getElementById("responsive-iframe").style.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 };
