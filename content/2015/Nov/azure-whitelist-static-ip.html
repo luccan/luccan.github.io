@@ -1,0 +1,49 @@
+<body style="display: none;"><div id="content">
+	<div class="row">
+		<div class="col-md-8">
+			<img class="img-responsive" src="./img/blog/azure-web.png" alias="maws"></img>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-8">
+			<h1>Configuring Static IP For Vendor Whitelisting in Windows Azure</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel">
+				<br/>
+				<p class="color-black">
+				Windows has employed a very neat IP network architecture abstraction in its Web Service.</br>
+				For a simple web application, deployment is as easy as adding a new WebApps service and publishing your content from home.</br>
+
+				However, when your web application starts to deal with vendors, you have a problem.
+				Some data vendors request your server's IP address to be whitelisted by their server.
+				Window's network architecture made a WebApps IP regional.
+				This means that anyone in the region will have the same 4 Public IP.
+				Definitely, this is not ideal for our needs.
+
+				While Windows has these solutions:
+				- https://azure.microsoft.com/en-us/documentation/articles/app-service-app-service-environment-intro/
+				- https://azure.microsoft.com/en-us/documentation/articles/app-service-web-how-to-create-an-app-service-environment/
+				They can be too pricey for a small-to-medium scale web application.
+
+				The solution is to give up on trying to configure Static IP for your Web App's Webjobs.
+				Instead, create an application, or a windows service, in an azure VM.
+				Resources to reserving IPs for a VM is easy to find.
+
+				You can read up more here:
+				http://blogs.technet.com/b/canitpro/archive/2013/11/06/set-by-step-manage-windows-azure-using-powershell.aspx
+				https://azure.microsoft.com/en-gb/documentation/articles/virtual-networks-reserved-public-ip/
+
+				> New-AzureReservedIP -ReservedIPName <Reserved IP Name> -Location "Southeast Asia"
+				> Get-AzureVM -Name <VM Name> -ServiceName <service name> | Set-AzureReservedIPAssociation -ReservedIPName <Reserved IP Name>
+
+				Do note that reserved IPs may change if you transfer ownership.
+				Consider using public IP if you may need to hand over development.
+				</p>
+			</div>
+		</div>
+	</div>
+</div><script src="../../../js/lazyblogger.js"></script></body>
