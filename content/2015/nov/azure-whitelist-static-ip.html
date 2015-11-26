@@ -37,7 +37,13 @@
 				<a href="https://azure.microsoft.com/en-gb/documentation/articles/virtual-networks-reserved-public-ip/">Virtual Networks Reserved Public IP</a><br/>
 				</p>
 				
-
+				<br/>
+				<div class="code">
+				<p>
+				&emsp;>> New-AzureReservedIP -ReservedIPName [Reserved IP Name] -Location "Southeast Asia"<br/>
+				&emsp;>> Get-AzureVM -Name [VM Name] -ServiceName [service name] | Set-AzureReservedIPAssociation -ReservedIPName [Reserved IP Name]
+				</p>
+				</div>
 				
 				<br/>
 				<p class="blog">
