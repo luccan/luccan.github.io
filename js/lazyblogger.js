@@ -4,8 +4,8 @@
 	This should only be called by items in the content/ directory.
 */
 //add meta to allow responsive design on phone
-document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">' + 
-														'<meta charset="utf-8">' +
+document.getElementsByTagName('head')[0].innerHTML = '<meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">' + 
+														'<meta charset="utf-8"><style type="text/css"></style>' +
 														'<meta http-equiv="X-UA-Compatible" content="IE=edge">';
 
 var url = window.location.href.split('/');
