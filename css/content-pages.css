@@ -1,12 +1,26 @@
-p.color-black {
+p.blog {
 	color: black;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+div.code {
+	font-size: 12px;
+	font-family: Calibri;
+	background-color: #F9F2F4;
+	color: #C7254E;
+	line-height: 1em;
+	padding: 8px;
+	border-radius:4px;
 }
 
 .panel {
 	background-color: #999999;
-	padding: 15px;
+	padding: 20px;
 }
 
 .img-responsive {
 	border-radius: 5px;
+	border: thin white solid;
 }

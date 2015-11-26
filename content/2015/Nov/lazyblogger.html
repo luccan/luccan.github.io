@@ -1,0 +1,63 @@
+<body style="display: none;"><div id="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>LazyBlogger: Static javascript blog template</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<img class="img-responsive" src="./img/blog/lazyblogger.png" alias="maws"></img>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-10">
+			<div class="panel">
+				<p class="blog">
+				When I want to create my own blog on github, I was very appalled to figure out that github only host static webpages - with the exception of jekyll.<br/>
+				As a windows user, I am too lazy to install ruby, jekyll server and whatnot.<br/>
+				I find static blog frameworks out there are too troublesome for my needs.<br/>
+				I only want to have a static template where I can modify my navbars, and a content area where I can freely populate with my posts.<br/>
+				<br/>
+				Well, it was more complicated than expected, but here it is, a javascript rendered blog framework.<br/>
+				<br/>
+				Usage Requirements:<br/>
+				- lazyblogger.js<br/>
+				- lazyblogger_layout.js<br/>
+				- content/ directory in your root directory (containing any directory and .html)<br/>
+				- layout.html<br/>
+				- Include this code in layout.html after loading jQuery<br/>
+				</p>
+				
+				<div class="code">
+				<p>
+				&emsp;&lt!-- lazyBlogger --><br/>
+				&emsp;&ltscript src="./js/lazyblogger_layout.js">&lt/script><br/>
+				&emsp;&lt\script><br/>
+				&emsp;&emsp;$( document ).ready(function(){<br/>
+				&emsp;&emsp;&emsp;lazyblogger_init($("#content"));<br/>
+				&emsp;&emsp;});<br/>
+				&emsp;&lt/script>
+				</p>
+				</div>
+
+				<br/>
+				<p class="blog">
+				Include this code in all content .html files (careful on lazyblogger.js location as you may want to nest content folder):<br/>
+				</p>
+				<div class="code">
+				<p>
+				&ltbody style="display: none;">&ltdiv id="content"><br/>
+				&emsp;&lt!-- your content here --><br/>
+				&lt/div>&ltscript src="../js/lazyblogger.js">&lt/script>&lt/body>
+				</p>
+				</div>
+
+				<br/>
+				<p class="blog">
+				Check it out <a href="https://luccan.github.io/LazyBlogger">here</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+</div><script src="../../../js/lazyblogger.js"></script></body>

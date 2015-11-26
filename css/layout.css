@@ -72,6 +72,10 @@
 	.sidebar-toggle{
 		display: none;
 	}
+	
+	.container-fluid {
+		padding: 0px 50px 0px;
+	}
 }
 
 /* Sidebar Styles */
@@ -117,11 +121,19 @@
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
+	color: white;
 }
 
 .sidebar-toggle {
     padding: 8px 14px 4px 14px;
 	color: #888;
+}
+
+.icon-flipped {
+	transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
 }
 
 #content{
