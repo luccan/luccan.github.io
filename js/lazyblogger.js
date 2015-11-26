@@ -20,13 +20,13 @@ for (var i=0;i<url.length;i++){
 document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
-document.body.innerHTML = '<div id="responsive-iframe" style="position: relative; overflow: hidden;">' + 
+document.body.innerHTML = '<div id="responsive-iframe" style="position: relative; overflow: hidden; height:0px; width:0px;">' + 
 						'<iframe id="myIframe" src="'+iframe_src+'" allowfullscreen="true" style="height:100%; width:100%; position:absolute; top:0px; left:0px;"></iframe>' +
 						'</div>';
 
 var myIframe = document.getElementById('myIframe');
 myIframe.onload = function() {
 	document.body.style["display"] = "block"; //show
-	document.getElementById("responsive-iframe").style.height = document.body.height;
-	document.getElementById("responsive-iframe").style.width = document.body.width;
+	document.getElementById("responsive-iframe").style.height = screen.height;
+	document.getElementById("responsive-iframe").style.width = screen.width;
 };
