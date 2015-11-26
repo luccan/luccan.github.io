@@ -20,7 +20,9 @@ for (var i=0;i<url.length;i++){
 document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
-document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" height="100%" width="100%"></iframe>';
+document.body.innerHTML = '<div style="position: relative; height:100%; width:100%; overflow: hidden;">' + 
+						'<iframe id="myIframe" src="'+iframe_src+'" allowfullscreen="true" style="height:100%; width:100%; position:absolute; top:0px; left:0px;"></iframe>' +
+						'</div>';
 
 var myIframe = document.getElementById('myIframe');
 myIframe.onload = function() {
