@@ -20,9 +20,11 @@ for (var i=0;i<url.length;i++){
 document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
-document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" height="100%" width="100%" style="position: absolute; -webkit-overflow-scrolling: touch;"></iframe>';
+document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" height="100%" width="100%"></iframe>';
 
 var myIframe = document.getElementById('myIframe');
 myIframe.onload = function() {
 	document.body.style["display"] = "block"; //show
+	document.body.style["height"] = document.body.height;
+	document.body.style["width"] = document.body.width;
 };
