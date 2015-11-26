@@ -3,6 +3,10 @@
     background-image: url('../img/dark_mosaic.png');
 }
 
+#wrapper.toggled #sidebar-wrapper {
+    width: 249px;
+}
+
 @media(min-width:768px) {
 	.container-fluid {
 		padding: 0px 50px 0px;
