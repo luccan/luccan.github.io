@@ -29,8 +29,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-	border-right: 1px white solid;
-    background: transparent;
+    background: white;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -72,10 +71,6 @@
 	.sidebar-toggle{
 		display: none;
 	}
-	
-	.container-fluid {
-		padding: 0px 50px 0px;
-	}
 }
 
 /* Sidebar Styles */
@@ -87,10 +82,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
-	color: white;
 }
 
-.sidebar-nav li{
+.sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
 }
@@ -98,15 +92,19 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: white;
-	background-color: transparent;
+    color: black;
 }
-	.sidebar-nav li a:active,
-	.sidebar-nav li a:hover,
-	.sidebar-nav li a:focus {
-		text-decoration: none;
-		background-color: rgba(180,180,180,0.1);
-	}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: gray;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
 
 .sidebar-nav > .sidebar-brand {
     height: 65px;
@@ -121,7 +119,6 @@
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
-	color: white;
 }
 
 .sidebar-toggle {

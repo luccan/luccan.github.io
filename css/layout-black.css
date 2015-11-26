@@ -1,0 +1,31 @@
+#sidebar-wrapper {
+	border-right: 1px white solid;
+    background-image: url('../img/dark_mosaic.png');
+}
+
+@media(min-width:768px) {
+	.container-fluid {
+		padding: 0px 50px 0px;
+	}
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+	color: white;
+}
+
+.sidebar-nav li a {
+    color: white;
+	background-color: transparent;
+}
+	.sidebar-nav li a:active,
+	.sidebar-nav li a:hover,
+	.sidebar-nav li a:focus {
+		text-decoration: none;
+		background-color: rgba(180,180,180,0.1);
+	}
+
+.sidebar-nav > .sidebar-brand a:hover {
+	color: white;
+}
