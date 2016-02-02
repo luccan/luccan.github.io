@@ -1,0 +1,95 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<body style="display: none;"><div id="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Using Google Forms as Backend for Static Website</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<img class="img-responsive" src="./img/blog/response-spreadsheet.png" alias="maws"></img>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-10">
+			<div class="panel">
+				<p class="blog">
+				Google Forms is quite cool. Especially, it links to Google Spreadheet, which is basically a mini-database.<br/>
+				However, we are stuck with Google Forms UI, and we cannot do customized validations using our favourite libraries.<br/>
+				So we overkill and use all kinds of full stack platforms to develop a simple order form.<br/>
+				<br/>
+				Not anymore. There is a simple hack to autopopulate your google forms and immediately submits the form.<br/>
+				All your user see is just a google form submission page that they can close.<br/>
+				<br/>
+				First, create a google form.<br/>
+				Click Responses > Get pre-filled url.<br/>
+				*Google forms has rolled out a new version. You have to click on the running man on the bottom left to go back to the old form.<br/>
+				<br/>
+				Click submit. You will get a link like below:<br/>
+				<div class="code"><p>
+				https://docs.google.com/forms/d/1KPUs7HRQDAWspAdydh84s9sgM7IEFqHkwZ-BE_FW9hc/viewform?entry.1118251165&entry.1465803323&entry.1601624496
+				</p></div>
+				<br/>
+				<p class="blog">
+				Edit this link to<br/>
+				<div class="code"><p>
+				https://docs.google.com/forms/d/1KPUs7HRQDAWspAdydh84s9sgM7IEFqHkwZ-BE_FW9hc/viewform?entry.1118251165=value1&entry.1465803323=value2&entry.1601624496=value3
+				</p></div>
+				<p class="blog">
+				to auto-populate the google forms.<br/>
+				<br/>
+				Further edit it to<br/>
+				<div class="code"><p>
+				https://docs.google.com/forms/d/1KPUs7HRQDAWspAdydh84s9sgM7IEFqHkwZ-BE_FW9hc/formResponse?entry.1118251165=value1&entry.1465803323=value2&entry.1601624496=value3
+				</p></div>
+				<p class="blog">
+				And now you have submitted the form.<br/>
+				<br/>
+				All that is left is to create a frontend that does the validation for you and populate the entries accordingly.<br/>
+				And of course, you can change the google form back to the 2016 look after getting the pre-filled url.<br/>
+				</p>
+				<div class="well">
+					<form id="sample-form" onsubmit="
+						var form_url = 'https://docs.google.com/forms/d/1KPUs7HRQDAWspAdydh84s9sgM7IEFqHkwZ-BE_FW9hc/formResponse?';
+						form_url+= 'entry.1118251165=' + document.getElementById('form-1').value;
+						form_url+= '&entry.1465803323=' + document.getElementById('form-2').value;
+						form_url+= '&entry.1601624496=' + document.getElementById('form-3').value;
+						window.open(form_url, '_blank');
+						return false;">
+					<div class="row"><div class="col-xs-12"><p class="lead" style="font-weight:bolder;text-align:center;margin-bottom: 0px;">
+						Sample Form
+					</p></div></div>
+					<div class="row"><div class="col-md-4 col-sm-5 col-xs-offset-1"><p class="lead smaller">Sample Question 1:</p></div>
+					<div class="col-md-7 col-sm-6"><input id="form-1" type="text" class="form-control" required></input></div></div>
+					<div class="row"><div class="col-md-4 col-sm-5 col-xs-offset-1"><p class="lead smaller">Sample Question 2:</p></div>
+					<div class="col-md-7 col-sm-6"><input id="form-2" type="number" class="form-control" min="0" required></input></div></div>
+					<div class="row"><div class="col-md-4 col-sm-5 col-xs-offset-1"><p class="lead smaller">Sample Question 3:</p></div>
+					<div class="col-md-7 col-sm-6"><div class="form-group">
+						<select class="form-control" id="form-3">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+						</div></div>
+					</div>
+					<div class=row><div class="col-md-7 col-md-offset-5 col-sm-6 col-sm-offset-6 col-xs-6 col-xs-offset-6">
+						<button id="form-submit" style="background-color: gray;" class="btn button-default">Proceed Now</button>
+					</div></div>
+					</form>
+				</div>
+				
+				<br/>
+				<p class="blog">
+				Check out the spreadsheet 'database' <a href="https://docs.google.com/spreadsheets/d/1bdoSdu1YkuM5PBMFzOOjlFWcz_GCGhglYb0YhxUmZ78/edit?usp=sharing" target="_blank">here</a>.<br/>
+				<br/>
+				Further Extensions:<br/>
+				Using Google Script, you can create all kind of cool things once you link your google forms to spreadsheet.<br/>
+				For instance, check out this code that allows you to automatically send a reply e-mail as someone submit their form<br/>
+				<a href="http://www.labnol.org/internet/auto-confirmation-emails/28386/">Auto Confirmation Email</a>
+			</p>
+			</div>
+		</div>
+	</div>
+</div><script src="../../../js/lazyblogger.js"></script></body>

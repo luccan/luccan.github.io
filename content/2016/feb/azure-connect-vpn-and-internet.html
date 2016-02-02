@@ -1,0 +1,84 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<body style="display: none;"><div id="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Connecting Azure Virtual Machine to Vendor VPN and the Internet</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<img class="img-responsive" src="./img/blog/azure-site-to-site.png" alias="maws-sts"></img>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-10">
+			<div class="panel">
+				<p class="blog">
+				I am going to address yet another problem commonly encountered when Azure VM meets vendor security requirements.<br/>
+				Also, this would be a great alternative to installing physical routers in your office.<br/>
+				<br/>
+				Here goes.<br/>
+				It is quite common for data vendors to require you to connect to their on-site VPN in order to start pulling data from their production machines.<br/>
+				In order to do so, they advise you to install a VPN client.<br/>
+				During development phase, it would be as simple as copy-pasting the shared key, username and password, and you start seeing their data on your local development machine.<br/>
+				<br/>
+				It was not until you are ready to move your solution to Azure VM you realize that once the Virtual Machine connects to the VPN, it lost connection to the rest of the web.<br/>
+				Your Remote Desktop Connection desperately tries to reconnect, and you have to restart the VM in order to regain the connection.<br/>
+				<img class="img-responsive" src="./img/blog/rdp-lost.png" alias="rdp-lost"></img>
+				<br/>
+				The data vendor give you an alternative solution: to install a hardware solution.<br/>
+				This is the horrors that comes along with that solution:<br/>
+				<span style="color: red;font-style: italic;">
+				- You need to Purchase a router<br/>
+				- You need to register a Public IP for your router<br/>
+				- The router needs to be connected to a dedicated PHYSICAL machine on YOUR site<br/>
+				</span>
+				So now, the maintenance and availability of your service falls to your site.<br/>
+				<br/>
+				There must be a way to configure this in Azure right? One that does not involve you installing and maintaining extra hardware on your end?<br/>
+				The answer is to use Windows azure Virtual Network Site-to-Site connection.<br/>
+				Here's what you need to do:<br/></p>
+				<div><ol class="list-group">
+					<li class="list-group-item">
+					1. Use the azure management portal to create a new Site-to-Site Virtual Network.<br/>
+						 - Under the DNS, include windows Azure default DNS 168.63.129.16 and 168.62.167.9 in addition to your vendor's VPN IP.<br/>
+						 - Create a Site-to-Site connection to your vendor VPN IP.<br/>
+						 - You might want to include google DNS 8.8.8.8 and 8.8.4.4, too.</li>
+						 
+					<li class="list-group-item">
+					2. Now, you may create a new Gateway to your Vendor's VPN. This may take quite some time.</li>
+					
+					<li class="list-group-item">
+					3. The gateway will attempt to connect to your vendor's router. For now, we will leave it in its perpetual Connecting state.</li>
+					
+					<li class="list-group-item">
+					4. Move your VM to the Virtual Network.<br/>
+						 - Some vendor require a 'Host IP' for your network. You can configure the internal IP in the new portal when the VM is running.</li>
+					
+					<li class="list-group-item">
+					5. Connect to your VM, make sure that it is connected to the internet through the DNS server.<br/>
+						 - It might be a good idea to enable ICMP on your VM, so your Vendor can ping ur machine.</li>
+					
+					<li class="list-group-item">
+					6. Now, you can tell your vendor that they need to whitelist your 'router'. Here are a list of things to tell them:<br/>
+						 - Your 'hardware' IP -- Your Gateway IP<br/>
+						 - Shared Key -- Your Virtual Network's Shared Key<br/>
+						 - Host IP -- Your VM's Internal IP address</li>
+					
+					<li class="list-group-item">
+					7. Once they whitelist your Virtual Network the gateway will successfully connect, and you will be connected to the Vendor VPN and the internet at the same time!</li>
+				</ol></div>
+				<p class="blog">
+				Of course, there will be extra costs incurred by Azure for creating a Site-to-Site Virtual Network.<br/>
+				However, considering the amount of cash you saved from having to purchase a router and a public IP, not to mention maintenance, you might seriously want to consider this approach.<br/>
+				<br/>
+				Here are resources for the technical details in setting up Azure Site-to-Site connections:<br/>
+				<a href="http://blogs.technet.com/b/canitpro/archive/2013/10/09/step-by-step-create-a-site-to-site-vpn-between-your-network-and-azure.aspx">Step by Step guide to create your Site-to-Site VNet</a><br/>
+				<a href="http://www.microsofttrends.com/2015/03/30/internet-access-from-azure-vm-not-working-problem-solved/">Configuring DNS for Azure VNet</a><br/>
+				<a href="https://azure.microsoft.com/en-gb/pricing/details/virtual-network/">Azure Pricing for Virtual Networks</a><br/>
+			</p>
+			</div>
+		</div>
+	</div>
+</div><script src="../../../js/lazyblogger.js"></script></body>
