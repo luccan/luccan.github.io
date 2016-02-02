@@ -189,13 +189,13 @@
 		})(jQuery);
 	
 		/* jqtimeline */
-		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(4*12));
+		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(5*12));
 		if (gapsize < 9){
 			$('#myTimeline').html('Please load in wider screen to view timeline.');
 		} else {
 			var tl = $('#myTimeline').jqtimeline({
 						events : timeline_data,
-						numYears:4,
+						numYears:5,
 						startYear:2012,
 						gap:gapsize,
 						click:function(e,event){

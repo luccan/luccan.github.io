@@ -158,6 +158,25 @@ var data = [
 	
 	/* Projects */
 	{
+		title: "LazyBlogger: Static javascript blog template",
+		type: "project",
+		imgurl: "./img/lazyblogger_logo.png",
+		company: "Personal",
+		position: "N/A",
+		start: new Date("26 Nov 2015"),
+		end: new Date("26 Nov 2015"),
+		desc: "Deployed a simple and minimalistic static js blog template.",
+		details: "<p>I disliked the idea of having to run a script to generate static pages to deploy a blog.</p>\
+				<p>As such, I played around with iframes to create a blog template that reuses layout with minimal hassle.</p>\
+				<p>It has its limitations, but I will try to improve it as much as possible.</p>\
+				<p>Read up more <a href='./content/2015/nov/lazyblogger.html'>here</a>.</p>",
+		priority: 15,
+		relevance: {
+			html5: 10,
+			javascript: 10
+		}
+	},
+	{
 		title: "SUTD PADI Website",
 		type: "project",
 		imgurl: "./img/padi_logo.png",
@@ -174,6 +193,24 @@ var data = [
 			html5: 10,
 			javascript: 10,
 			bootstrap: 8
+		}
+	},
+	{
+		title: "Image-Based Navigation Using 3D Visual SLAM ",
+		type: "project",
+		imgurl: "./img/ignus_logo.png",
+		company: "SUTD United Research Opportunity Project",
+		position: "Student Assistant",
+		start: new Date("19 Jan 2015"),
+		end: new Date("30 Apr 2015"),
+		desc: "Assisted researchers develop application using Kinect SDK to generate 3D .stl files used for further processing.",
+		details: "<p>Exposure to image rendering and kinect sdk. Also learned the basic idea of SLAM and its various applications.</p>",
+		priority: 5,
+		relevance: {
+			csharp: 10,
+			kinectsdk: 7,
+			pointcloud: 7,
+			slam: 5
 		}
 	},
 	{
@@ -327,9 +364,49 @@ var data = [
 			database: 5
 		}
 	},
+	
+	/* Others */
+	{
+		title: "Hackathon Merdeka 3.0",
+		type: "other",
+		imgurl: "./img/hackathonmerdeka_logo.png",
+		company: "Code4Nation",
+		position: "Participant",
+		start: new Date("04 Dec 2015"),
+		end: new Date("06 Dec 2015"),
+		desc: "Developed an image-oriented reporting platform that targets teenagers who love to snap.",
+		details: "<p>This platform is inspired by the online platform 9gag and Instagram.</p>\
+					<p>In a team of 5, we build a platform from scratch using meteor.js.</p>\
+					<p>As for image hosting, we used a free service, <a href='http://cloudinary.com/'>cloudinary</a>, and link it to our website. This is an unique experience as we have to hack around the service to search for an image hosting service whose image url can be retrieved. Our mongodb only stores the urlstring to the image.</p>\
+					<p>We also implemented a basic rating system and an admin who needs to approve posts to elevate their popularity.</p>\
+					<p>Unfortunately, a similar service has been put in place and the judges deem that our project lack UX. Despite all of these, I personally feel that we have made quite an application in under 48 hours.</p>\
+					<p>I would like to thank Made Raditya Pujamurti, Jefferey Effendy, Indra Firmansyah, and Ryan Alexander for an amazing 3-day sprint.</p>",
+		priority: 25,
+		relevance: {
+			meteorjs: 10,
+			html5: 3,
+			bootstrap: 3
+		}
+	},
+	{
+		title: "DBS Digital Gamejam 2015",
+		type: "achievement",
+		imgurl: "./img/moneyfarm_logo.png",
+		company: "DBS",
+		position: "Participant",
+		start: new Date("11 Dec 2015"),
+		end: new Date("13 Dec 2015"),
+		desc: "Design and development of Money Farm.",
+		details: "<p>Back to Gamejam, with a new topic of 'The Bulls and The Bears'.</p>\
+					<p>It tingles my interest in the stock market more than ever.</p>",
+		priority: 10,
+		relevance: {
+			gamemaker: 10
+		}
+	},
 	{
 		title: "Hackathon@SG50 Smart Nation",
-		type: "achievement",
+		type: "other",
 		imgurl: "./img/hackathonsg_logo.png",
 		company: "Hackathon@SG",
 		position: "Participant",
@@ -346,7 +423,7 @@ var data = [
 	},
 	{
 		title: "Cyberdefender Discovery Camp 2012",
-		type: "achievement",
+		type: "other",
 		imgurl: "./img/cyberdefender_logo.png",
 		company: "DSTA",
 		position: "Participant",
@@ -361,8 +438,6 @@ var data = [
 			networks: 10
 		}
 	},
-	
-	/* Others */
 	{
 		title: "OCIP Batam 2012",
 		type: "other",
