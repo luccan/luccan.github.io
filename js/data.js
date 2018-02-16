@@ -208,7 +208,7 @@ var data = [
 		details: "<p>I discovered Cloudways at this point and boy, they make cloud deployment easy.</p>\
 				<p>Good introduction to PHP here.</p>\
 				<p>Oh, and I played around with SEO, as far as the word free is applicable.</p>\
-				<p>Hype And Seek is a neat Influencer Marketing Platform. Visit them <a href='www.hypeandseek.com'>here</a>.</p>",
+				<p>Hype And Seek is a neat Influencer Marketing Platform. Visit them <a href='https://www.hypeandseek.com'>here</a>.</p>",
 		priority: 25,
 		relevance: {
 			site_migration: 10,
