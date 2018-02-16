@@ -32,6 +32,11 @@ body {
 	width: 300px;
 }
 
+.lowvpadding .checkbox, .lowvpadding .radio {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .carousel-caption-content{
 	position: relative;
 	width: 100%;
@@ -157,6 +162,12 @@ body {
 		border-radius: 3px;
 		background-color: #aaaaaa;
 	}
+	.gt-timeline div.odd-month {
+		display: none;
+	}
+		.gt-timeline div .month {
+			font-size: x-small;
+		}
 
 #navbar-sort.highlight {
 	animation:blink 600ms 1;

@@ -113,7 +113,22 @@ function dynamic_sort(){
     }
 }
 
-function sort_data(list){
+function filtered_data(excluded_item_type){
+	var new_data = [];
+	for (var i = 0; i < data.length; i++){
+		var include = true;
+		for (var z=0;z<excluded_item_type.length;z++){ //filter data type
+			if (data[i].type==excluded_item_type[z]){
+				include = false;
+			}
+		}
+		if (!include){ continue; }
+		new_data.push(data[i]);
+	}
+	return new_data;
+}
+
+function sort_data(list, excluded_item_type, max_items, include_irrelevant){ //list, list, int, bool
 	/* indexing data with relevance score */
 	data_score = [];
 	for (var i = 0; i < data.length; i++){
@@ -135,7 +150,15 @@ function sort_data(list){
 	for (var i = 0; i < data.length; i++){
 		data_score[i].id = i;
 	}
-	return data_score;
+	var display_data_score = []
+	for (var i = 0; i < Math.min(max_items,data_score.length); i++){
+		display_data_score.push(data_score[i]);
+		if (data_score[i].relevance<=0.0 && !include_irrelevant){ //if exclude irrelevant, stop adding items once relevance is 0
+			console.log('!!!');
+			break;
+		}
+	}
+	return display_data_score;
 }
 
 /* read Query Parameters */
@@ -150,7 +173,29 @@ if (location.search) {
 		params[nv[0]] = nv[1] || true;
 	}
 }
-if (typeof params.property === "undefined" || typeof params.weight === "undefined"){
+
+var excluded_item_type = [];
+var include_irrelevant = true;
+if (typeof params.flags !== "undefined"){ //read flags
+	var _flags = params.flags.split(",");
+	for (var i=0;i<_flags.length;i++){
+		if (_flags[i]=='include-irrelevant'){
+			include_irrelevant = false;
+			continue;
+		}
+		excluded_item_type.push(_flags[i].substr(8)); //remove 'include-'
+	}
+}
+//console.log(excluded_item_type);
+data = filtered_data(excluded_item_type); //Exclude data
+
+
+
+var max_items = 999;
+if (typeof params.max_items !== "undefined"){ //read max_items
+	max_items = parseInt(params.max_items);
+}
+if (typeof params.property === "undefined" || typeof params.weight === "undefined"){ //read properties
 	//default
 	params.property = "";
 	params.weight = "";
@@ -162,7 +207,7 @@ for (var i=0;i<Math.min(params.property.length, params.weight.length);i++){
 	list.push({ property: params.property[i], weight: params.weight[i] });
 }
 console.log(list);
-var timeline_data = sort_data(list);
+var timeline_data = sort_data(list, excluded_item_type, max_items, include_irrelevant);
 console.log(timeline_data);
 
 function generate_dropdown_row(name, id){
@@ -220,6 +265,21 @@ if ($('#sort1-weight').val() == null){
 	$('#sort1-weight').val(10);
 }
 
+//repopulate dataviz options according to parameters
+for (var i=0;i<excluded_item_type.length;i++){
+	$('#sort-include-' + excluded_item_type[i] + '-flag').prop('checked', false);
+}
+//assign include_irrelevant if true
+if (include_irrelevant){
+	$('#sort-include-irrelevant-flag').prop('checked', true);
+}
+//assign max_items parameter
+if (max_items !== 999){
+	$('#sort-max-items').val(max_items);
+}
+
+
+/*Assign OnClick Functionality*/
 $('#sort-add-btn').click(function(e){
 	add_sort_row();
 });
@@ -241,9 +301,40 @@ $('#sort-submit-btn').click(function(e){
 			weight += _weight;
 		}
 	}
+	var flag_names = ['include-irrelevant', 'include-work', 'include-project', 'include-achievement', 'include-other']
+	var flags = '';
+	for (var i=0;i<flag_names.length;i++){
+		//if flag is in property, it means the value of the flag is FALSE
+		//when value of checkbox is FALSE, add to url parameter
+		if ($('#sort-'+flag_names[i]+'-flag').prop('checked')==false){
+			if (flags!=''){
+				flags+=',';
+			}
+			flags+=flag_names[i];
+		}
+	}
+	var max_items = $('#sort-max-items').val();
+	if (max_items == 'All' || max_items === 'undefined'){
+		max_items = '';
+	}
 	var url = './index.html';
+	if (property!='' || flags!=''){
+		url += '?';
+	}
 	if (property!=''){
-		url += '?property=' + property + '&weight=' + weight;
+		url += 'property=' + property + '&weight=' + weight;
+		if (flags!='' || max_items!=''){
+			url += '&';
+		}
+	}
+	if (flags!=''){
+		url += 'flags=' + flags;
+		if (max_items!=''){
+			url += '&';
+		}
+	}
+	if (max_items!=''){
+		url += 'max_items=' + max_items;
 	}
 	window.location.href = url;
 });

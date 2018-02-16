@@ -2,7 +2,46 @@
 var data = [
 	/* Work Experience */
 	{
-		title: "Financial Website Project",
+		title: "Loan Management System",
+		type: "work",
+		imgurl: "./img/optimai_logo.png",
+		company: "Optimai Pte Ltd",
+		position: "IT Consultant",
+		start: new Date("01 Jan 2017"),
+		end: new Date("16 Feb 2018"),
+		desc: "Developed an all-purpose Loan Management System.",
+		details: "<p>A different approach from normal loan systems, this system attempts to generalize all type of loans into different type of parameters.</p>",
+		priority: 60,
+		relevance: {
+			ssms: 10,
+			finance: 8,
+			datavis: 6,
+			bizanalytics: 6,
+			vbnet: 5,
+			devexpress: 5,
+			tfs: 3
+		}
+	},
+	{
+		title: "Settlement Optimization Analytics Tool",
+		type: "work",
+		imgurl: "./img/optimai_logo.png",
+		company: "Optimai Pte Ltd",
+		position: "IT Consultant",
+		start: new Date("03 Oct 2016"),
+		end: new Date("01 Apr 2017"),
+		desc: "Implemented an Analytics Tool to compare and study various optimization heuristics and algorithms.",
+		details: "<p>This Tool is done in basic VB.NET, building on top of the Optimization Research project.</p>\
+					<p>Implemented Real-time Visualization and calculated result analysis at the end of the run.</p>",
+		priority: 20,
+		relevance: {
+			vbnet: 10,
+			datavis: 4,
+			tfs: 3
+		}
+	},
+	{
+		title: "Structured Warrants Website Project",
 		type: "work",
 		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
@@ -158,6 +197,89 @@ var data = [
 	
 	/* Projects */
 	{
+		title: "Hype And Seek",
+		type: "project",
+		imgurl: "./img/hypeandseek_logo.png",
+		company: "Hype And Seek",
+		position: "Vendor",
+		start: new Date("05 Nov 2017"),
+		end: new Date("08 Jan 2018"),
+		desc: "Vendor for PHP Laravel Site Migration and Maintenance.",
+		details: "<p>I discovered Cloudways at this point and boy, they make cloud deployment easy.</p>\
+				<p>Good introduction to PHP here.</p>\
+				<p>Oh, and I played around with SEO, as far as the word free is applicable.</p>\
+				<p>Hype And Seek is a neat Influencer Marketing Platform. Visit them <a href='www.hypeandseek.com'>here</a>.</p>",
+		priority: 25,
+		relevance: {
+			site_migration: 10,
+			php: 5,
+			laravel: 5,
+			cloudways: 5,
+			seo: 3
+		}
+	},
+	{
+		title: "Capstone - SkyOpt VR Prototype",
+		type: "project",
+		imgurl: "./img/capstoneskyopt_logo.png",
+		company: "SUTD",
+		position: "Developer & Product Design",
+		start: new Date("1 Jan 2016"),
+		end: new Date("20 Aug 2016"),
+		desc: "Developed a prototype Interior Architecture VR Visualizer.",
+		details: "<p>It's more complex than it sounds.</p>\
+				<p>We have a 'builder', an Unity plug-in for Interior Architects to import their models and add the key visualizers in their cad.</p>\
+				<p>These files, or 'renders' then can be uploaded to our server, where it can be downloaded by the mobile app.</p>\
+				<p>Users choose which renders to visualize in VR, and they can walk around, visualizing airflow, noise levels, and more.</p>\
+				<p>Oh, we have this both in Google Cardboard and Gear VR, so thats a plus.</p>\
+				<p>OK, let's be fair. It's a prototype. It's not as complex as it sounds.</p>",
+		priority: 25,
+		relevance: {
+			vr: 10,
+			google_cardboard: 5,
+			gearvr: 3,
+			unity: 10
+		}
+	},
+	{
+		title: "Canone - A 3d Endless Runner Game",
+		type: "project",
+		imgurl: "./img/canone_logo.png",
+		company: "SUTD",
+		position: "Graphics & Developer",
+		start: new Date("1 May 2016"),
+		end: new Date("15 Aug 2016"),
+		desc: "Developed a prototype endless runner game in unity.",
+		details: "<p>A culture shock for being rather shy from 3D game development engines.</p>\
+				<p>TIL Particles, 3D Physics, and basic rigging.</p>",
+		priority: 15,
+		relevance: {
+			unity: 10,
+			blender: 10,
+			gamedev: 7
+		}
+	},
+	{
+		title: "GAYA 2016 Website",
+		type: "project",
+		imgurl: "./img/gaya2016_logo.png",
+		company: "SMU SMUKI",
+		position: "Marketing",
+		start: new Date("1 Sep 2015"),
+		end: new Date("20 Mar 2016"),
+		desc: "Built an event website that track orders in a spreadsheet and send automated confirmation e-mails.",
+		details: "<p>This is an interesting challenge to explore if I can leverage on github's free static space and the power of a webapp with a database and a server.</p>\
+				<p>The end result is a decent user experience platform built on top of google forms, spreadsheets, and some google scripts.</p>\
+				<p>Not sure about security concerns. Do drop me an e-mail if that renders my google account hackable.</p>\
+				<p>Read up more <a href='./content/2016/jan/google-forms-backend-for-static-web.html'>here</a>.</p>",
+		priority: 25,
+		relevance: {
+			html5: 10,
+			javascript: 10,
+			bootstrap: 7
+		}
+	},
+	{
 		title: "LazyBlogger: Static javascript blog template",
 		type: "project",
 		imgurl: "./img/lazyblogger_logo.png",
@@ -277,7 +399,8 @@ var data = [
 		priority: 8,
 		relevance: {
 			libgdx: 10,
-			androidstudio: 10
+			androidstudio: 10,
+			gamedev: 5
 		}
 	},
 	{
@@ -333,6 +456,21 @@ var data = [
 	},
 	
 	/* achievements */
+	{
+		title: "SUTD Accenture Analytics Edge Award 2016",
+		type: "achievement",
+		imgurl: "./img/achievement_logo.png",
+		company: "SUTD & Accenture",
+		position: "Winner",
+		start: new Date("1 Sep 2016"),
+		end: new Date("1 Sep 2016"),
+		desc: "Best in 2016 cohort for Analytics Edge (40.220) Course.",
+		details: "<p>Technically, tied with another person, but hey.</p>",
+		priority: 25,
+		relevance: {
+			bizanalytics: 10
+		}
+	},
 	{
 		title: "DBS Digital Gamejam 2014",
 		type: "achievement",

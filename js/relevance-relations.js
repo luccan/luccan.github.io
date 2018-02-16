@@ -6,6 +6,13 @@ var relevance_relations = [
 		}
 	},
 	{
+		parent: "graphics",
+		child: {
+			pointcloud: 10,
+			ransac: 10
+		}
+	},
+	{
 		parent: "algorithm",
 		child: {
 			simulated_annealing: 9,
@@ -151,7 +158,8 @@ var relevance_relations = [
 		child: {
 			kendoui: 10,
 			bootstrap: 10,
-			jquery: 10
+			jquery: 10,
+			meteor: 10
 		}
 	},
 	{
@@ -163,7 +171,8 @@ var relevance_relations = [
 	{
 		parent: "csharp",
 		child: {
-			arduino: 10
+			arduino: 10,
+			kinectsdk: 10
 		}
 	},
 	{

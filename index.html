@@ -59,10 +59,48 @@
 							<div id="sort-dropdown-content">
 								
 							</div>
-							<li role="separator" class="divider"></li>
-							<button id="sort-delete-btn" class="btn">Del <span class="glyphicon glyphicon-minus-sign" aria-hidden="true" style="color: red;"></span></button>
 							<button id="sort-add-btn" class="btn">Add <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="color: green;"></span></button>
-							<button id="sort-submit-btn" class="btn">Submit</button>
+							<button id="sort-delete-btn" class="btn">Remove <span class="glyphicon glyphicon-minus-sign" aria-hidden="true" style="color: red;"></span></button>
+							<li role="separator" class="divider"></li>
+							<div class="row lowvpadding"><div class="col-xs-12">
+								<div class="checkbox">
+									<label><input id="sort-include-irrelevant-flag" type="checkbox">Include Irrelevant Items on Timeline</label>
+								</div></div>
+							</div>
+							<div class="row lowvpadding"><div class="col-xs-12">
+								<div class="checkbox">
+									<label><input id="sort-include-work-flag" type="checkbox" checked>Include Work Items</label>
+								</div></div>
+							</div>
+							<div class="row lowvpadding"><div class="col-xs-12">
+								<div class="checkbox">
+									<label><input id="sort-include-project-flag" type="checkbox" checked>Include Project Items</label>
+								</div></div>
+							</div>
+							<div class="row lowvpadding"><div class="col-xs-12">
+								<div class="checkbox">
+									<label><input id="sort-include-achievement-flag" type="checkbox" checked>Include Achievement Items</label>
+								</div></div>
+							</div>
+							<div class="row lowvpadding"><div class="col-xs-12">
+								<div class="checkbox">
+									<label><input id="sort-include-other-flag" type="checkbox" checked>Include Other Items</label>
+								</div></div>
+							</div>
+							<div class="row lowvpadding">
+								<div class="col-xs-4"><p style="padding-top: 6px;">Max Items:</p></div>
+								<div class="col-xs-4">
+									<select class="form-control" id="sort-max-items">
+										<option value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option selected value="All">All</option>
+									</select>
+								</div>
+								<div class="col-xs-4">
+									<button id="sort-submit-btn" class="btn">Submit</button>
+								</div>
+							</div>
 						</li></div>
 					</ul>
 				</li>
@@ -189,13 +227,13 @@
 		})(jQuery);
 	
 		/* jqtimeline */
-		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(5*12));
+		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(7*12));
 		if (gapsize < 9){
 			$('#myTimeline').html('Please load in wider screen to view timeline.');
 		} else {
 			var tl = $('#myTimeline').jqtimeline({
 						events : timeline_data,
-						numYears:5,
+						numYears:7,
 						startYear:2012,
 						gap:gapsize,
 						click:function(e,event){
