@@ -208,7 +208,7 @@ var data = [
 		details: "<p>I discovered Cloudways at this point and boy, they make cloud deployment easy.</p>\
 				<p>Good introduction to PHP here.</p>\
 				<p>Oh, and I played around with SEO, as far as the word free is applicable.</p>\
-				<p>Hype And Seek is a neat Influencer Marketing Platform. Visit them <a href='https://www.hypeandseek.com'>here</a>.</p>",
+				<p>Hype And Seek is a neat Influencer Marketing Platform. Visit them <a href='https://www.hypeandseek.com' target=\"_blank\">here</a>.</p>",
 		priority: 25,
 		relevance: {
 			site_migration: 10,
@@ -271,7 +271,7 @@ var data = [
 		details: "<p>This is an interesting challenge to explore if I can leverage on github's free static space and the power of a webapp with a database and a server.</p>\
 				<p>The end result is a decent user experience platform built on top of google forms, spreadsheets, and some google scripts.</p>\
 				<p>Not sure about security concerns. Do drop me an e-mail if that renders my google account hackable.</p>\
-				<p>Read up more <a href='./content/2016/jan/google-forms-backend-for-static-web.html'>here</a>.</p>",
+				<p>Read up more <a href='./content/2016/jan/google-forms-backend-for-static-web.html' target=\"_blank\">here</a>.</p>",
 		priority: 25,
 		relevance: {
 			html5: 10,
@@ -291,7 +291,7 @@ var data = [
 		details: "<p>I disliked the idea of having to run a script to generate static pages to deploy a blog.</p>\
 				<p>As such, I played around with iframes to create a blog template that reuses layout with minimal hassle.</p>\
 				<p>It has its limitations, but I will try to improve it as much as possible.</p>\
-				<p>Read up more <a href='./content/2015/nov/lazyblogger.html'>here</a>.</p>",
+				<p>Read up more <a href='./content/2015/nov/lazyblogger.html' target=\"_blank\">here</a>.</p>",
 		priority: 15,
 		relevance: {
 			html5: 10,
@@ -515,7 +515,7 @@ var data = [
 		desc: "Developed an image-oriented reporting platform that targets teenagers who love to snap.",
 		details: "<p>This platform is inspired by the online platform 9gag and Instagram.</p>\
 					<p>In a team of 5, we build a platform from scratch using meteor.js.</p>\
-					<p>As for image hosting, we used a free service, <a href='http://cloudinary.com/'>cloudinary</a>, and link it to our website. This is an unique experience as we have to hack around the service to search for an image hosting service whose image url can be retrieved. Our mongodb only stores the urlstring to the image.</p>\
+					<p>As for image hosting, we used a free service, <a href='http://cloudinary.com/' target=\"_blank\">cloudinary</a>, and link it to our website. This is an unique experience as we have to hack around the service to search for an image hosting service whose image url can be retrieved. Our mongodb only stores the urlstring to the image.</p>\
 					<p>We also implemented a basic rating system and an admin who needs to approve posts to elevate their popularity.</p>\
 					<p>Unfortunately, a similar service has been put in place and the judges deem that our project lack UX. Despite all of these, I personally feel that we have made quite an application in under 48 hours.</p>\
 					<p>I would like to thank Made Raditya Pujamurti, Jefferey Effendy, Indra Firmansyah, and Ryan Alexander for an amazing 3-day sprint.</p>",
