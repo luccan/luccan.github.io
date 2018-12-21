@@ -42,6 +42,21 @@ var data = [
 		}
 	},
 	{
+		title: "Tuition Teacher (Diploma in IT)",
+		type: "work",
+		imgurl: "./img/work_logo.png",
+		company: "",
+		position: "Teacher",
+		start: new Date("01 Jan 2017"),
+		end: new Date("30 Jun 2018"),
+		desc: "Gave weekly tuition to an international student pursuing a Diploma in IT in Kaplan University.",
+		details: "<p>Revisiting theoretical concepts that has been forgotten in the hustle and bustle of work life is quite nice.</p>",
+		priority: 5,
+		relevance: {
+			teaching:10
+		}
+	},
+	{
 		title: "Loan Management System",
 		type: "work",
 		imgurl: "./img/optimai_logo.png",
