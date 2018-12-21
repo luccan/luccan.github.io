@@ -95,6 +95,7 @@ var relevance_relations = [
 			javascript: 9,
 			cpp: 10,
 			csharp: 8,
+			php: 7,
 			vcs: 8
 		}
 	},
@@ -109,7 +110,8 @@ var relevance_relations = [
 		parent: "deployment",
 		child: {
 			azure: 10,
-			aws: 10
+			aws: 10,
+			cloudways: 10
 		}
 	},
 	
@@ -204,6 +206,7 @@ var relevance_relations = [
 			aspmvc: 10,
 			springmvc: 10,
 			jsp: 10,
+			php: 10,
 			html5: 10,
 			javascript: 10
 		}
@@ -225,6 +228,13 @@ var relevance_relations = [
 	},
 	
 	/* expertise */
+	{
+		parent: "finance",
+		child: {
+			options:10,
+			crypto: 8
+		}
+	},
 	{
 		parent: "azure",
 		child: {

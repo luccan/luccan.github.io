@@ -2,6 +2,46 @@
 var data = [
 	/* Work Experience */
 	{
+		title: "Crypto Asset Management System",
+		type: "work",
+		imgurl: "./img/optimai_logo.png",
+		company: "Optimai Pte Ltd",
+		position: "IT Consultant",
+		start: new Date("01 Sep 2017"),
+		end: new Date("01 Sep 2018"), /*To be updated*/
+		desc: "Customized Asset Management System to fit Cryptocurrencies Trading.",
+		details: "<p>Interesting customizations include: </p> \
+					<p>- Supporting up to 18 decimal places</p> \
+					<p>- Automated On-Chain Settlements</p> \
+					",
+		priority: 45,
+		relevance: {
+			ssms: 10,
+			crypto:8,
+			finance: 8,
+			tfs: 3
+		}
+	},
+	{
+		title: "Integrated Investment System",
+		type: "work",
+		imgurl: "./img/optimai_logo.png",
+		company: "Optimai Pte Ltd",
+		position: "IT Consultant",
+		start: new Date("01 Jul 2017"),
+		end: new Date("01 Jul 2018"), /*To be updated*/
+		desc: "Integrated various investment products to produce a comprehensive client statement.",
+		details: "<p>A highly customized reporting system where logical presentation is important to produce a logical and accurate final report.</p>",
+		priority: 30,
+		relevance: {
+			ssms: 10,
+			finance: 10,
+			datavis: 6,
+			vbnet: 5,
+			tfs: 3
+		}
+	},
+	{
 		title: "Loan Management System",
 		type: "work",
 		imgurl: "./img/optimai_logo.png",
@@ -159,7 +199,7 @@ var data = [
 		}
 	},
 	{
-		title: "Appsilient Framework Developer",
+		title: "Winforms Framework Developer",
 		type: "work",
 		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
