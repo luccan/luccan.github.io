@@ -45,7 +45,7 @@ var data = [
 		title: "Tuition Teacher (Diploma in IT)",
 		type: "work",
 		imgurl: "./img/work_logo.png",
-		company: "",
+		company: "Personal",
 		position: "Teacher",
 		start: new Date("01 Jan 2017"),
 		end: new Date("30 Jun 2018"),
