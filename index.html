@@ -227,14 +227,17 @@
 		})(jQuery);
 	
 		/* jqtimeline */
-		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/(7*12));
+		var startYear = 2012;
+		var endYear = 2021;
+		var numYear = endYear - startYear + 1;
+		var gapsize = parseInt(($('#myTimeline').parent().width()-60)/((numYear*12));
 		if (gapsize < 9){
 			$('#myTimeline').html('Please load in wider screen to view timeline.');
 		} else {
 			var tl = $('#myTimeline').jqtimeline({
 						events : timeline_data,
-						numYears:9,
-						startYear:2012,
+						numYears:numYear,
+						startYear:startYear,
 						gap:gapsize,
 						click:function(e,event){
 							$('#timelineCarousel').carousel(event.id);
