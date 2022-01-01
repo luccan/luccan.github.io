@@ -596,7 +596,7 @@ var data = [
 		desc: "Took part of a couple of mini-competitions in a string of Coding challenges",
 		details: "<p>Nothing much to brag about, no prize, just a humble cert.</p>\
 					<p>Best achievement is on 'Order Brushing'. I think I did pretty well (but not so sure if the leaderboard has changed since then)</p>\
-					<p>A fun change in using SQL for pure analysis instead of using it to store data.</p>"
+					<p>A fun change in using SQL for pure analysis instead of using it to store data.</p>",
 		priority: 10,
 		relevance: {
 			ssms: 10,
