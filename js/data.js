@@ -2,13 +2,39 @@
 var data = [
 	/* Work Experience */
 	{
+		title: "REAP Framework Developer",
+		type: "work",
+		imgurl: "./img/optimai_logo.png",
+		company: "Optimai Pte Ltd",
+		position: "IT Manager",
+		start: new Date("01 Jan 2019"),
+		end: new Date("01 Dec 2021"), /*To be updated*/
+		desc: "Design, develop, enhance, and maintain company Framework",
+		details: "<p>Metadata-driven framework design, for convenience of business logic deployment.<p>\
+					<p>Designed REAP pitch deck that is used for SFF 2019.</p>\
+					<p>Main design features include:\
+					<ul>\
+						<li>Workflow Customization</li>\
+						<li>Audit Trail</li>\
+						<li>API driven design (REST)</li>\
+						<li>Automated Regression Testing</li>\
+					</ul>\
+					</p>",
+		priority: 55,
+		relevance: {
+			vbnet: 10,
+			devexpress: 7,
+			ssms: 6
+		}
+	},
+	{
 		title: "Crypto Asset Management System",
 		type: "work",
 		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "IT Consultant",
 		start: new Date("01 Sep 2017"),
-		end: new Date("01 Sep 2018"), /*To be updated*/
+		end: new Date("01 Sep 2021"), /*To be updated*/
 		desc: "Customized Asset Management System to fit Cryptocurrencies Trading.",
 		details: "<p>Interesting customizations include: </p> \
 					<p>- Supporting up to 18 decimal places</p> \
@@ -29,7 +55,7 @@ var data = [
 		company: "Optimai Pte Ltd",
 		position: "IT Consultant",
 		start: new Date("01 Jul 2017"),
-		end: new Date("01 Jul 2018"), /*To be updated*/
+		end: new Date("01 Jul 2021"), /*To be updated*/
 		desc: "Integrated various investment products to produce a comprehensive client statement.",
 		details: "<p>A highly customized reporting system where logical presentation is important to produce a logical and accurate final report.</p>",
 		priority: 30,
@@ -63,7 +89,7 @@ var data = [
 		company: "Optimai Pte Ltd",
 		position: "IT Consultant",
 		start: new Date("01 Jan 2017"),
-		end: new Date("16 Feb 2018"),
+		end: new Date("16 Feb 2021"),
 		desc: "Developed an all-purpose Loan Management System.",
 		details: "<p>A different approach from normal loan systems, this system attempts to generalize all type of loans into different type of parameters.</p>",
 		priority: 60,
@@ -71,7 +97,7 @@ var data = [
 			ssms: 10,
 			finance: 8,
 			datavis: 6,
-			bizanalytics: 6,
+			bizanalytics: 9,
 			vbnet: 5,
 			devexpress: 5,
 			tfs: 3
@@ -559,6 +585,24 @@ var data = [
 	},
 	
 	/* Others */
+	{
+		title: "Shopee Code League",
+		type: "other",
+		imgurl: "./img/shopeecodeleague_logo.png",
+		company: "Shopee",
+		position: "Participant",
+		start: new Date("08 Jun 2020"),
+		end: new Date("08 Aug 2020"),
+		desc: "Took part of a couple of mini-competitions in a string of Coding challenges",
+		details: "<p>Nothing much to brag about, no prize, just a humble cert.</p>\
+					<p>Best achievement is on 'Order Brushing'. I think I did pretty well (but not so sure if the leaderboard has changed since then)</p>\
+					<p>A fun change in using SQL for pure analysis instead of using it to store data.</p>"
+		priority: 10,
+		relevance: {
+			ssms: 10,
+			bizanalytics: 10
+		}
+	},
 	{
 		title: "Hackathon Merdeka 3.0",
 		type: "other",
