@@ -26,15 +26,16 @@ var relevance_relations = [
 		}
 	},
 	{
-		parent: "bizanalytics",
+		parent: "business_analytics",
 		child: {
 			options: 10,
 			setinstrs: 10
 		}
 	},
 	{
-		parent: "datavis",
+		parent: "data_visualization",
 		child: {
+			grafana: 6,
 			tableau: 6,
 			matlab: 2
 		}
@@ -63,17 +64,19 @@ var relevance_relations = [
 	{
 		parent: "userexperience",
 		child: {
-			webdev: 3,
-			mobiledev: 3,
-			gamedev: 3,
+			web_development: 3,
+			mobile_development: 3,
+			game_development: 3,
 			userinterface: 3
 		}
 	},
 	{
 		parent: "networks",
 		child: {
-			netconfig: 5,
-			wireshark: 5
+			wireshark: 10,
+			firewall: 10,
+			vpn: 6,
+			netconfig: 5
 		}
 	},
 	{
@@ -82,8 +85,144 @@ var relevance_relations = [
 			vcs: 10
 		}
 	},
+	{
+		parent: "infrastructure",
+		child: {
+			infrastructure_cloud: 10,
+			infrastructure_onprem: 10,
+			load_balancer: 10,
+			firewall: 10,
+			winserver: 10,
+			vpn: 10,
+			pdq: 8,
+			kubernetes: 8,
+			
+		}
+	},
+	{
+		parent: "infrastructure_cloud",
+		child: {
+			azure: 10,
+			aws: 10,
+			cloudways: 10,
+			ovh: 10,
+			intune: 7
+		}
+	},
+	{
+		parent: "infrastructure_onprem",
+		child: {
+			ovh: 10,
+			biznet: 10,
+			vsphere: 10
+		}
+	},
+	{
+		parent: "infrastructure_windows",
+		child: {
+			azure: 10,
+			powershell: 5,
+			batch_script: 5,
+			ad: 10,
+			dns: 8,
+			gpo: 10,
+			nps: 10
+		}
+	},
+	{
+		parent: "inventory",
+		child: {
+			device42: 10
+		}
+	},
+	{
+		parent: "firewall",
+		child: {
+			palo_alto: 10,
+			cloudflare: 10,
+			fortinet: 10
+		}
+	},
+	{
+		parent: "vpn",
+		child: {
+			globalprotect: 10
+		}
+	},
+	{
+		parent: "wifi",
+		child: {
+			ruckus: 10
+		}
+	},
+	{
+		parent: "load_balancer",
+		child: {
+			f5: 10,
+			cloudflare: 10,
+			azure_loadbalancer: 10
+		}
+	},
+	{ /*Infra As Code*/
+		parent: "iac",
+		child: {
+			terraform: 10,
+			ansible: 10
+		}
+	},
+	{ /*Identity Access Management*/
+		parent: "iam",
+		child: {
+			identityiq: 10,
+			identitynow: 10
+		}
+	},
+	{
+		parent: "policy_management",
+		child: {
+			gpo: 10,
+			intune: 10
+		}
+	},
+	{
+		parent: "vulnerability_management",
+		child: {
+			tenable: 10
+		}
+	},
+	{
+		parent: "sftp",
+		child: {
+			bitvise: 10
+		}
+	},
 	
-	/* workflow */
+	/* Product / Vendor Grouping */
+	{
+		parent: "azure",
+		child: {
+			maws: 10,
+			winserver: 6
+		}
+	},
+	{
+		parent: "winserver",
+		child: {
+			hyperv: 10,
+			powershell: 10,
+			batch_script: 5
+		}
+	},
+	{
+		parent: "sailpoint",
+		child: {
+			identityiq: 10,
+			identitynow: 10
+		}
+	},
+	
+	
+	/* workflow / role */
 	{
 		parent: "development",
 		child: {
@@ -100,6 +239,28 @@ var relevance_relations = [
 		}
 	},
 	{
+		parent: "automation",
+		child: {
+			iac: 10,
+			monitoring: 10,
+			testautomation: 10
+		}
+	},
+	{
+		parent: "monitoring",
+		child: {
+			nagios: 10,
+			grafana: 10
+		}
+	},
+	{
+		parent: "alerting",
+		child: {
+			opsgenie: 10,
+			pagerduty: 10
+		}
+	},
+	{ /*TODO: To be Reclassified*/
 		parent: "testautomation",
 		child: {
 			atlassian: 10,
@@ -109,11 +270,18 @@ var relevance_relations = [
 	{
 		parent: "deployment",
 		child: {
-			azure: 10,
-			aws: 10,
-			cloudways: 10
+			infrastructure: 10,
+			site_migration: 10
 		}
 	},
+	{
+		parent: "project_management",
+		child: {
+			jira: 10,
+			confluence: 10
+		}
+	},
+	
 	
 	/* language */
 	{
@@ -127,7 +295,7 @@ var relevance_relations = [
 		parent: "vbnet",
 		child: {
 			aspmvc: 10,
-			winservice: 10,
+			windows_service: 10,
 			ssms: 3
 		}
 	},
@@ -144,8 +312,9 @@ var relevance_relations = [
 			springmvc: 10,
 			jsp: 10,
 			eclipseadt: 10,
-			androidstudio: 10,
-			credence: 10
+			android_studio: 10,
+			credence: 10,
+			identityiq: 5
 		}
 	},
 	{
@@ -178,13 +347,13 @@ var relevance_relations = [
 		}
 	},
 	{
-		parent: "batchscript",
+		parent: "batch_script",
 		child: {
 			atlassian: 10
 		}
 	},
 	{
-		parent: "shellscript",
+		parent: "shell_script",
 		child: {
 			atlassian: 10
 		}
@@ -199,9 +368,9 @@ var relevance_relations = [
 		}
 	},
 	
-	/* product */
+	/* Role */
 	{
-		parent: "webdev",
+		parent: "web_development",
 		child: {
 			aspmvc: 10,
 			springmvc: 10,
@@ -212,7 +381,7 @@ var relevance_relations = [
 		}
 	},
 	{
-		parent: "gamedev",
+		parent: "game_development",
 		child: {
 			gamemaker: 10,
 			libgdx: 10,
@@ -220,10 +389,16 @@ var relevance_relations = [
 		}
 	},
 	{
-		parent: "mobiledev",
+		parent: "mobile_development",
 		child: {
 			eclipseadt: 10,
-			androidstudio: 10
+			android_studio: 10
+		}
+	},
+	{
+		parent: "sysadmin",
+		child: {
+			infrastructure: 10
 		}
 	},
 	
@@ -233,21 +408,6 @@ var relevance_relations = [
 		child: {
 			options:10,
 			crypto: 8
-		}
-	},
-	{
-		parent: "azure",
-		child: {
-			maws: 10,
-			winserver: 6
-		}
-	},
-	{
-		parent: "winserver",
-		child: {
-			hyperv: 10,
-			powershell: 10,
-			batchscript: 5
 		}
 	},
 	{
