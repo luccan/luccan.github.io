@@ -2,13 +2,123 @@
 var data = [
 	/* Work Experience */
 	{
+		title: "System & Network Engineer",
+		type: "work",
+		imgurl: "./img/shift-technology_logo.png",
+		company: "Shift Technology",
+		position: "System & Network Engineer",
+		start: new Date("28 Feb 2022"),
+		end: new Date("01 Dec 2023"), /*To be updated*/
+		desc: "Create, manage, monitor and maintain company infrastructure, cloud and on-prem",
+		details: "<p>Hybrid GUI, CLI, and Infrastructure as Code, both manual and automation.<p>\
+					<p>Implement Group Policies and Identity Access Management.</p>\
+					<p>Part of ongoing company-wide IaC migration.</p>\
+					<p>Manage physical firewalls, WAF, VNet routing, Load Balancers.</p>\
+					<p>Perform backups, updates, reboot cycle, vulnerability management, audits, etc.</p>\
+					<p>Level 2 Technical support.</p>\
+					<p>Develop automation scripts to improve efficiency.</p>\
+					<p>Develop and manage various monitoring and alerting. Some examples:</p>\
+					<ul>\
+						<li>Monitor Azure source IP ranges to prevent integration failure on Firewall whitelist</li>\
+						<li>Monitor SQL Server database-level uptime</li>\
+						<li>Monitor process resource use unexpected spikes</li>\
+					</ul>\
+					</p>\
+					<p>Document various processes and technical details.</p>\
+					<p>Contribute on designing internal team KPI, SOP, and management process.</p>\
+					<p>Manage internal and external stakeholders on incidents and support requests.</p>\
+					",
+		priority: 60,
+		relevance: {
+			azure: 10,
+			ovh: 10,
+			terraform: 5,
+			aws: 1,
+			powershell: 10,
+			bash: 7,
+			python: 7,
+			java: 5,
+			git: 5,
+			pdq: 8,
+			kubernetes: 4,
+			ansible: 4,
+			nagios: 8,
+			grafana: 6,
+			opsgenie: 8,
+			pagerduty: 6,
+			palo_alto: 10,
+			globalprotect: 6,
+			cloudflare: 7,
+			f5: 5,
+			ruckus: 5,
+			intune: 3,
+			device42: 3,
+			thycotic: 6,
+			identityiq: 6,
+			identitynow: 4,
+			tenable: 7,
+			veeam: 3,
+			bitvise: 4,
+			windows: 10,
+			ad: 8,
+			dns: 8,
+			gpo: 8,
+			nps: 6,
+			linux: 8,
+			jira: 8,
+			confluence: 8
+		}
+	},
+	{
+		title: "Database Administrator",
+		type: "work",
+		imgurl: "./img/shift-technology_logo.png",
+		company: "Shift Technology",
+		position: "System & Network Engineer",
+		start: new Date("28 Feb 2022"),
+		end: new Date("01 Dec 2023"), /*To be updated*/
+		desc: "Manage and automate database infrastructure and access",
+		details: "<p>Maintain automation scripts for database setup and backups.<p>\
+					<p>Configure high availability databases and datalakes.</p>\
+					<p>Debug and optimize SQL Scripts should developers face any technical issues</p>\
+					",
+		priority: 25,
+		relevance: {
+			ssms: 10,
+			azure: 7,
+			vbnet: 1
+		}
+	},
+	{
+		title: "Helpdesk",
+		type: "work",
+		imgurl: "./img/shift-technology_logo.png",
+		company: "Shift Technology",
+		position: "System & Network Engineer",
+		start: new Date("28 Feb 2022"),
+		end: new Date("01 Dec 2023"), /*To be updated*/
+		desc: "Onboard, Provision and Support user machines",
+		details: "<p>Work laptops: Windows (Dell) & Mac, Surface.<p>\
+					<p>Manage wifi and access points.</p>\
+					<p>Manage office access cards, printers, infrastructure inventory, etc</p>\
+					",
+		priority: 30,
+		relevance: {
+			windows: 10,
+			mac: 1,
+			salto: 6,
+			ruckus: 6,
+			ad: 6
+		}
+	},
+	{
 		title: "REAP Framework Developer",
 		type: "work",
 		imgurl: "./img/optimai_logo.png",
 		company: "Optimai Pte Ltd",
 		position: "IT Manager",
 		start: new Date("01 Jan 2019"),
-		end: new Date("01 Dec 2021"), /*To be updated*/
+		end: new Date("28 Feb 2022"),
 		desc: "Design, develop, enhance, and maintain company Framework",
 		details: "<p>Metadata-driven framework design, for convenience of business logic deployment.<p>\
 					<p>Designed REAP pitch deck that is used for SFF 2019.</p>\
@@ -34,7 +144,7 @@ var data = [
 		company: "Optimai Pte Ltd",
 		position: "IT Consultant",
 		start: new Date("01 Sep 2017"),
-		end: new Date("01 Sep 2021"), /*To be updated*/
+		end: new Date("28 Feb 2022"),
 		desc: "Customized Asset Management System to fit Cryptocurrencies Trading.",
 		details: "<p>Interesting customizations include: </p> \
 					<p>- Supporting up to 18 decimal places</p> \
@@ -55,14 +165,14 @@ var data = [
 		company: "Optimai Pte Ltd",
 		position: "IT Consultant",
 		start: new Date("01 Jul 2017"),
-		end: new Date("01 Jul 2021"), /*To be updated*/
+		end: new Date("01 Jul 2021"),
 		desc: "Integrated various investment products to produce a comprehensive client statement.",
 		details: "<p>A highly customized reporting system where logical presentation is important to produce a logical and accurate final report.</p>",
 		priority: 30,
 		relevance: {
 			ssms: 10,
 			finance: 10,
-			datavis: 6,
+			data_visualization: 6,
 			vbnet: 5,
 			tfs: 3
 		}
@@ -96,8 +206,8 @@ var data = [
 		relevance: {
 			ssms: 10,
 			finance: 8,
-			datavis: 6,
-			bizanalytics: 9,
+			data_visualization: 6,
+			business_analytics: 9,
 			vbnet: 5,
 			devexpress: 5,
 			tfs: 3
@@ -140,7 +250,7 @@ var data = [
 		relevance: {
 			ssms: 10,
 			aspmvc: 8,
-			winservice: 8,
+			windows_service: 8,
 			git: 6,
 			maws: 7,
 			kendoui: 8,
@@ -337,7 +447,7 @@ var data = [
 		relevance: {
 			unity: 10,
 			blender: 10,
-			gamedev: 7
+			game_development: 7
 		}
 	},
 	{
@@ -430,8 +540,8 @@ var data = [
 		priority: 20,
 		relevance: {
 			arduino: 10,
-			woodworks: 10,
-			gamedev: 8
+			wood_works: 10,
+			game_development: 8
 		}
 	},
 	{
@@ -464,7 +574,7 @@ var data = [
 		priority: 10,
 		relevance: {
 			sponsorship: 10,
-			eventplanning: 10
+			event_planning: 10
 		}
 	},
 	{
@@ -480,8 +590,8 @@ var data = [
 		priority: 8,
 		relevance: {
 			libgdx: 10,
-			androidstudio: 10,
-			gamedev: 5
+			android_studio: 10,
+			game_development: 5
 		}
 	},
 	{
@@ -513,7 +623,7 @@ var data = [
 					<p>Credits to prof. <a href=\"http://www.okakurniawan.net/\" target=\"_blank\">Oka</a> for the kind guidance and also, as the inspiration for the name of the game.</p>",
 		priority: 10,
 		relevance: {
-			gamedev: 10,
+			game_development: 10,
 			multisim: 10
 		}
 	},
@@ -549,7 +659,7 @@ var data = [
 		details: "<p>Technically, tied with another person, but hey.</p>",
 		priority: 25,
 		relevance: {
-			bizanalytics: 10
+			business_analytics: 10
 		}
 	},
 	{
@@ -586,6 +696,27 @@ var data = [
 	
 	/* Others */
 	{
+		title: "YSEALI Cultural Heritage Hackathon 2023",
+		type: "other",
+		imgurl: "./img/conservationofwatershed_logo.png",
+		company: "Shopee",
+		position: "Participant",
+		start: new Date("18 Mar 2023"),
+		end: new Date("19 Mar 2023"),
+		desc: "Pitched eco-tourism as a solution to tangible water-related issues on Watershed as a cultural heritage",
+		details: "<p>No cigar, (not sure about being close though), just a humble cert (To be issued).</p>\
+					<p>Likely to start an episode of hackathon participations for the months to come.</p>\
+					<p>Thanks, YSEALI & Urban Studies Lab!</p>\
+					<p></p>\
+					<p>Special Mention: My teammates Fedra dos Santos & Reniel Rocaberte, thanks for the 2 fun days :)</p>\
+					",
+		priority: 10,
+		relevance: {
+			powerpoint: 10,
+			miro: 7
+		}
+	},
+	{
 		title: "Shopee Code League",
 		type: "other",
 		imgurl: "./img/shopeecodeleague_logo.png",
@@ -593,14 +724,14 @@ var data = [
 		position: "Participant",
 		start: new Date("08 Jun 2020"),
 		end: new Date("08 Aug 2020"),
-		desc: "Took part of a couple of mini-competitions in a string of Coding challenges",
+		desc: "Took part on a couple of mini-competitions in a string of Coding challenges",
 		details: "<p>Nothing much to brag about, no prize, just a humble cert.</p>\
 					<p>Best achievement is on 'Order Brushing'. I think I did pretty well (but not so sure if the leaderboard has changed since then)</p>\
 					<p>A fun change in using SQL for pure analysis instead of using it to store data.</p>",
 		priority: 10,
 		relevance: {
 			ssms: 10,
-			bizanalytics: 10
+			business_analytics: 10
 		}
 	},
 	{
@@ -654,7 +785,7 @@ var data = [
 		priority: 5,
 		relevance: {
 			java: 10,
-			datavis: 6,
+			data_visualization: 6,
 			vr: 3
 		}
 	},
@@ -687,7 +818,7 @@ var data = [
 		details: "<p>Appreciation for small joys in life.</p>",
 		priority: 5,
 		relevance: {
-			eventplanning: 10
+			event_planning: 10
 		}
 	},
 ];
