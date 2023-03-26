@@ -8,7 +8,7 @@ var data = [
 		company: "Shift Technology",
 		position: "System & Network Engineer",
 		start: new Date("28 Feb 2022"),
-		end: new Date("01 Dec 2023"), /*To be updated*/
+		end: new Date(), /*To be updated*/
 		desc: "Create, manage, monitor and maintain company infrastructure, cloud and on-prem",
 		details: "<p>Hybrid GUI, CLI, and Infrastructure as Code, both manual and automation.<p>\
 					<p>Implement Group Policies and Identity Access Management.</p>\
@@ -76,7 +76,7 @@ var data = [
 		company: "Shift Technology",
 		position: "System & Network Engineer",
 		start: new Date("28 Feb 2022"),
-		end: new Date("01 Dec 2023"), /*To be updated*/
+		end: new Date(), /*To be updated*/
 		desc: "Manage and automate database infrastructure and access",
 		details: "<p>Maintain automation scripts for database setup and backups.<p>\
 					<p>Configure high availability databases and datalakes.</p>\
@@ -96,7 +96,7 @@ var data = [
 		company: "Shift Technology",
 		position: "System & Network Engineer",
 		start: new Date("28 Feb 2022"),
-		end: new Date("01 Dec 2023"), /*To be updated*/
+		end: new Date(), /*To be updated*/
 		desc: "Onboard, Provision and Support user machines",
 		details: "<p>Work laptops: Windows (Dell) & Mac, Surface.<p>\
 					<p>Manage wifi and access points.</p>\
