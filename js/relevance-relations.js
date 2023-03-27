@@ -1,18 +1,5 @@
 var relevance_relations = [
 	{
-		parent: "database",
-		child: {
-			sql: 10
-		}
-	},
-	{
-		parent: "graphics",
-		child: {
-			pointcloud: 10,
-			ransac: 10
-		}
-	},
-	{
 		parent: "algorithm",
 		child: {
 			simulated_annealing: 9,
@@ -20,37 +7,9 @@ var relevance_relations = [
 		}
 	},
 	{
-		parent: "optimization",
-		child: {
-			simulated_annealing: 10
-		}
-	},
-	{
-		parent: "business_analytics",
-		child: {
-			options: 10,
-			setinstrs: 10
-		}
-	},
-	{
-		parent: "data_visualization",
-		child: {
-			grafana: 6,
-			tableau: 6,
-			matlab: 2
-		}
-	},
-	{
 		parent: "robotics",
 		child: {
 			arduino: 7
-		}
-	},
-	{
-		parent: "sysadmin",
-		child: {
-			winserver: 10,
-			netconfig: 10
 		}
 	},
 	{
@@ -197,7 +156,7 @@ var relevance_relations = [
 		}
 	},
 	
-	/* Product / Vendor Grouping */
+	/* SECTION: Product / Vendor Grouping */
 	{
 		parent: "azure",
 		child: {
@@ -222,7 +181,7 @@ var relevance_relations = [
 	},
 	
 	
-	/* workflow / role */
+	/* SECTION: workflow / role */
 	{
 		parent: "development",
 		child: {
@@ -278,12 +237,54 @@ var relevance_relations = [
 		parent: "project_management",
 		child: {
 			jira: 10,
-			confluence: 10
+			confluence: 10,
+			github: 2
+		}
+	},
+	{
+		parent: "database",
+		child: {
+			sql: 10
+		}
+	},
+	{
+		parent: "graphics",
+		child: {
+			pointcloud: 10,
+			ransac: 10
+		}
+	},
+	{
+		parent: "optimization",
+		child: {
+			simulated_annealing: 10
+		}
+	},
+	{
+		parent: "business_analytics",
+		child: {
+			options: 10,
+			setinstrs: 10
+		}
+	},
+	{
+		parent: "data_visualization",
+		child: {
+			grafana: 6,
+			tableau: 6,
+			matlab: 2
+		}
+	},
+	{
+		parent: "sysadmin",
+		child: {
+			winserver: 10,
+			netconfig: 10
 		}
 	},
 	
 	
-	/* language */
+	/* SECTION: language */
 	{
 		parent: "sql",
 		child: {
@@ -358,6 +359,16 @@ var relevance_relations = [
 			atlassian: 10
 		}
 	},
+	
+	/* SECTION: Stack */
+	{
+		parent: "git",
+		child: {
+			github: 8
+		}
+	},
+	
+	/* SECTION: Classification */
 	{
 		parent: "vcs",
 		child: {
@@ -368,7 +379,7 @@ var relevance_relations = [
 		}
 	},
 	
-	/* Role */
+	/* SECTION: Role */
 	{
 		parent: "web_development",
 		child: {
@@ -402,7 +413,7 @@ var relevance_relations = [
 		}
 	},
 	
-	/* expertise */
+	/* SECTION: expertise */
 	{
 		parent: "finance",
 		child: {
