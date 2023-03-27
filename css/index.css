@@ -182,7 +182,7 @@ body {
 	.gt-timeline div.month {
 		display: none; /*Hide Text of all months*/
 	}
-	.gt-timeline .leftend .year div {
+	.gt-timeline .leftend div.year {
 		top: -20px; /*Center the height of year when .month is hidden*/
 	}
 
