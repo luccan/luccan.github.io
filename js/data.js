@@ -86,8 +86,8 @@ var data = [
 		relevance: {
 			ssms: 10,
 			azure: 7,
-			ssms-alwayson: 5,
-			ssms-tde: 5,
+			ssms_alwayson: 5,
+			ssms_tde: 5,
 			vbnet: 1
 		}
 	},
