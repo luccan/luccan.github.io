@@ -88,7 +88,9 @@ var data = [
 			azure: 7,
 			ssms_alwayson: 5,
 			ssms_tde: 5,
-			vbnet: 1
+			vbnet: 1,
+			jira: 5,
+			confluence: 5
 		}
 	},
 	{
@@ -111,7 +113,9 @@ var data = [
 			salto: 6,
 			ruckus: 6,
 			meraki: 1,
-			ad: 6
+			ad: 6,
+			jira: 5,
+			confluence: 5
 		}
 	},
 	{
@@ -137,7 +141,8 @@ var data = [
 		relevance: {
 			vbnet: 10,
 			devexpress: 7,
-			ssms: 6
+			ssms: 6,
+			jira: 5
 		}
 	},
 	{
@@ -177,7 +182,8 @@ var data = [
 			finance: 10,
 			data_visualization: 6,
 			vbnet: 5,
-			tfs: 3
+			tfs: 3,
+			jira: 5
 		}
 	},
 	{
@@ -213,7 +219,8 @@ var data = [
 			business_analytics: 9,
 			vbnet: 5,
 			devexpress: 5,
-			tfs: 3
+			tfs: 3,
+			jira: 5
 		}
 	},
 	{
@@ -259,7 +266,8 @@ var data = [
 			kendoui: 8,
 			bootstrap: 8,
 			options: 8,
-			springmvc: 3
+			springmvc: 3,
+			jira: 3
 		}
 	},
 	{
@@ -282,7 +290,8 @@ var data = [
 			simulated_annealing: 7,
 			tableau: 3,
 			options: 6,
-			matlab: 3
+			matlab: 3,
+			jira: 5
 		}
 	},
 	{
@@ -302,7 +311,8 @@ var data = [
 			winserver: 7,
 			hyperv: 10,
 			netconfig: 6,
-			batchscript: 3
+			batchscript: 3,
+			jira: 3
 		}
 	},
 	{
@@ -330,7 +340,8 @@ var data = [
 			shellscript: 6,
 			git: 4,
 			svn: 4,
-			atlassian: 4
+			atlassian: 4,
+			jira: 2
 		}
 	},
 	{
@@ -369,7 +380,8 @@ var data = [
 			vbnet: 9,
 			devexpress: 7,
 			intersoft: 2,
-			ssms: 4
+			ssms: 4,
+			github: 3
 		}
 	},
 	{ //.....................................................
@@ -432,7 +444,8 @@ var data = [
 			vr: 10,
 			google_cardboard: 5,
 			gearvr: 3,
-			unity: 10
+			unity: 10,
+			github: 3
 		}
 	},
 	{
@@ -470,7 +483,8 @@ var data = [
 		relevance: {
 			html5: 10,
 			javascript: 10,
-			bootstrap: 7
+			bootstrap: 7,
+			github: 4
 		}
 	},
 	{
@@ -489,7 +503,8 @@ var data = [
 		priority: 15,
 		relevance: {
 			html5: 10,
-			javascript: 10
+			javascript: 10,
+			github: 3
 		}
 	},
 	{
@@ -508,7 +523,8 @@ var data = [
 		relevance: {
 			html5: 10,
 			javascript: 10,
-			bootstrap: 8
+			bootstrap: 8,
+			github: 3
 		}
 	},
 	{
@@ -594,7 +610,8 @@ var data = [
 		relevance: {
 			libgdx: 10,
 			android_studio: 10,
-			game_development: 5
+			game_development: 5,
+			github: 3
 		}
 	},
 	{
@@ -756,7 +773,8 @@ var data = [
 		relevance: {
 			meteorjs: 10,
 			html5: 3,
-			bootstrap: 3
+			bootstrap: 3,
+			jira: 5
 		}
 	},
 	{
