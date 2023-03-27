@@ -358,9 +358,9 @@ function display_model_str(data, id){
 							<a id="<DETAILS_ID>" class="carousel-see-details-text" href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
 								$(\'#<PANEL_ID>\').slideToggle(\'slow\');">See Details<span class="caret"></span></a></p>\
 							<br/>\
-							<div id="<PANEL_ID>" class="panel" style="display:none;">\
+							<div id="<PANEL_ID>" class="panel carousel-details-panel" style="display:none;">\
 								<p style="text-align: right;">\
-								<a href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
+								<a class="carousel-hide-details-text" href="javascript:" onclick="javascript:$(\'#<DETAILS_ID>\').toggleClass(\'panel-hidden\');\
 									$(\'#<PANEL_ID>\').slideToggle(\'slow\');">Hide Details<span class="caret caret-reversed"></span> </a></p>\
 								<DET>\
 								<br/>\
@@ -397,6 +397,12 @@ function display_model_str(data, id){
 	str = str.replace('<RELEVANCE>',relevance_str);
 	//console.log(str);
 	return str;
+}
+
+/*Resets current carousel-details-panel and hidden carousel-see-details-text*/
+function reset_current_carousel_panel_details(){
+	$(".carousel-see-details-text.panel-hidden:visible").toggleClass("panel-hidden"); /* Unhide Current See Details */
+	$(".carousel-details-panel:visible").slideToggle("0"); /* Hide Current Details Panel (instant) */
 }
 
 var carousel_content_str = ''
