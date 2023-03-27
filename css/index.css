@@ -42,10 +42,6 @@ body {
 	width: 100%;
 	height: 100%;
 }
-.carousel-caption-content a{
-	z-index: 101; /*More than carousel-control*/
-	position: relative; /*Needed for z-index to work*/
-}
 .carousel .panel{
 	padding: 10px;
 	overflow-y: auto;
@@ -112,6 +108,9 @@ body {
 	}
 	.carousel .panel{
 		position: absolute;
+	}
+	#detailspanel2{
+		margin-right: 40px; /*Ensure it doesn't go behind carousel-control, on mobile mode*/
 	}
 }
 .carousel-indicators {
