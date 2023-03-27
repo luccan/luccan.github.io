@@ -162,12 +162,18 @@ body {
 		border-radius: 3px;
 		background-color: #aaaaaa;
 	}
-	.gt-timeline div.odd-month {
-		display: none;
+	.gt-timeline div .month {
+		font-size: xx-small;
 	}
-		.gt-timeline div .month {
-			font-size: xx-small;
-		}
+	.gt-timeline div.odd-month {
+		display: none; /*Hide Feb, Apr, etc*/
+	}
+	.gt-timeline div.month {
+		display: none; /*Hide All Months*/
+	}
+	.gt-timeline div .year {
+		top: -20px; /*Center the height of year when .month is hidden*/
+	}
 
 #navbar-sort.highlight {
 	animation:blink 600ms 1;
