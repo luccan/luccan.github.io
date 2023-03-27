@@ -403,6 +403,9 @@ function display_model_str(data, id){
 function reset_current_carousel_panel_details(){
 	$(".carousel-see-details-text.panel-hidden:visible").toggleClass("panel-hidden"); /* Unhide Current See Details */
 	$(".carousel-details-panel:visible").slideToggle("0"); /* Hide Current Details Panel (instant) */
+	console.log("resetting current details");
+	console.log($(".carousel-see-details-text.panel-hidden:visible"));
+	console.log($(".carousel-details-panel:visible"));
 }
 
 var carousel_content_str = ''
