@@ -110,6 +110,7 @@ var data = [
 			mac: 1,
 			salto: 6,
 			ruckus: 6,
+			meraki: 1,
 			ad: 6
 		}
 	},
