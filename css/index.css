@@ -42,6 +42,11 @@ body {
 	width: 100%;
 	height: 100%;
 }
+@media(max-width:1200px){
+	.carousel-see-details-text {
+		margin-right: 40px; /*Ensure it doesn't go behind carousel-control, on mobile mode*/
+	}
+}
 .carousel .panel{
 	padding: 10px;
 	overflow-y: auto;
@@ -108,9 +113,6 @@ body {
 	}
 	.carousel .panel{
 		position: absolute;
-	}
-	.carousel-see-details-text {
-		margin-right: 40px; /*Ensure it doesn't go behind carousel-control, on mobile mode*/
 	}
 }
 .carousel-indicators {
