@@ -90,7 +90,7 @@ var data = [
 		}
 	},
 	{
-		title: "Helpdesk",
+		title: "IT Helpdesk",
 		type: "work",
 		imgurl: "./img/shift-technology_logo.png",
 		company: "Shift Technology",
