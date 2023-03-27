@@ -425,5 +425,9 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 	//$('[data-toggle="tooltip"]').tooltip('show');
 	$('[data-toggle="tooltip"]').mouseleave(function() { $(this).tooltip('hide'); });
+	
+	$('#timelineCarousel').on('slid.bs.carousel', function() { 
+		reset_current_carousel_panel_details();
+	});
 });
 //console.log(carousel_content_str);
