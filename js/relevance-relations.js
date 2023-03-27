@@ -39,12 +39,6 @@ var relevance_relations = [
 		}
 	},
 	{
-		parent: "teamwork",
-		child: {
-			vcs: 10
-		}
-	},
-	{
 		parent: "infrastructure",
 		child: {
 			infrastructure_cloud: 10,
@@ -155,6 +149,7 @@ var relevance_relations = [
 			bitvise: 10
 		}
 	},
+	
 	
 	/* SECTION: Product / Vendor Grouping */
 	{
@@ -412,6 +407,38 @@ var relevance_relations = [
 			infrastructure: 10
 		}
 	},
+	
+	/* SECTION: Trait / Types */
+	{
+		parent: "teamwork",
+		child: {
+			project_team: 10,
+			vcs: 10,
+			project_management: 5
+		}
+	},
+	{
+		parent: "project",
+		child: {
+			project_team: 10,
+			project_solo: 10,
+			project_management: 5
+		}
+	},
+	{
+		parent: "poc",
+		child: {
+			hackathon: 10
+		}
+	},
+	{
+		parent: "competition",
+		child: {
+			hackathon: 10,
+			award: 10
+		}
+	},
+	
 	
 	/* SECTION: expertise */
 	{
