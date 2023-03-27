@@ -414,7 +414,7 @@ var data = [
 		details: "<p>This project is pretty cool. The idea is to upload 3D Models to a repository, and create relational diagrams on how the models evolve, based on timestamp or based the mesh metadata.</p>\
 				<p>As a Student Assistant, I got to solve some Development tickets during the course of the projects. </p>\
 				<p>My most fun ticket is implementing the Hausdorff Distance logic to calculate the 'distance' between two 3D models. </p>\
-				<p>Thanks for the opportunity, Verina :) I hope I contributed enough. </p>"
+				<p>Thanks for the opportunity, Verina :) I hope I contributed enough. </p>",
 		priority: 15,
 		relevance: {
 			poc: 10,
