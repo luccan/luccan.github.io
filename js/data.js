@@ -412,8 +412,9 @@ var data = [
 		end: new Date("05 Nov 2019"),
 		desc: "A POC of a relational VCS for Grasshopper 3D Model versioning.",
 		details: "<p>This project is pretty cool. The idea is to upload 3D Models to a repository, and create relational diagrams on how the models evolve, based on timestamp and/or the mesh itself.</p>\
-				<p>Thanks for the opportunity, Verina :) I hope I contributed enough.
-			</p>"
+				<p>As a Student Assistant, I got to solve some Development tickets during the course of the projects. </p>\
+				<p>My most fun ticket is implementing the Hausdorff Distance logic to calculate the 'distance' between two 3D models. </p>\
+				<p>Thanks for the opportunity, Verina :) I hope I contributed enough. </p>\"
 		priority: 15,
 		relevance: {
 			poc: 10,
