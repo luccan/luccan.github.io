@@ -403,6 +403,32 @@ var data = [
 	
 	/* Projects */
 	{
+		title: "GhShot",
+		type: "project",
+		imgurl: "./img/project_logo.png", /*To be updated*/
+		company: "Meta Design Lab",
+		position: "Part Time Developer (Student Assistant)",
+		start: new Date("04 May 2019"),
+		end: new Date("05 Nov 2019"),
+		desc: "A POC of a relational VCS for Grasshopper 3D Model versioning.",
+		details: "<p>This project is pretty cool. The idea is to upload 3D Models to a repository, and create relational diagrams on how the models evolve, based on timestamp and/or the mesh itself.</p>\
+				<p>Thanks for the opportunity, Verina :) I hope I contributed enough.
+			</p>"
+		priority: 15,
+		relevance: {
+			poc: 10,
+			project_team: 10,
+			js: 10,
+			html5: 7,	
+			hausdorff_distance: 10,
+			data_visualization: 5,
+			mesh: 5,
+			npm: 5,
+			mongodb: 5,
+			github: 3
+		}
+	},
+	{
 		title: "Hype And Seek",
 		type: "project",
 		imgurl: "./img/hypeandseek_logo.png",
@@ -808,6 +834,7 @@ var data = [
 		relevance: {
 			hackathon: 10,
 			meteorjs: 10,
+			mongodb: 5,
 			html5: 3,
 			bootstrap: 3,
 			jira: 5
