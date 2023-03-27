@@ -100,7 +100,7 @@ var data = [
 		start: new Date("28 Feb 2022"),
 		end: new Date(), /*To be updated*/
 		desc: "Onboard, Provision and Support user machines",
-		details: "<p>Work laptops: Windows (Dell) & Mac, Surface.<p>\
+		details: "<p>Manage user work laptops, Windows (Dell & Surface) & Mac<p>\
 					<p>Manage wifi and access points.</p>\
 					<p>Manage office access cards, printers, infrastructure inventory, etc</p>\
 					",
