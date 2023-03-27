@@ -171,10 +171,10 @@ body {
 	.gt-timeline div.odd-month {
 		display: none; /*Hide Feb, Apr, etc*/
 	}
-	.gt-timeline div.month {
-		display: none; /*Hide All Months*/
+	.gt-timeline div.even-month {
+		display: none; /*Hide Jan, Mar, etc*/
 	}
-	.gt-timeline div .year {
+	.gt-timeline div .year .leftend {
 		top: -20px; /*Center the height of year when .month is hidden*/
 	}
 
