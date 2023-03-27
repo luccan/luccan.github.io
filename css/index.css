@@ -109,7 +109,7 @@ body {
 	.carousel .panel{
 		position: absolute;
 	}
-	#detailspanel2{
+	.carousel-see-details-text {
 		margin-right: 40px; /*Ensure it doesn't go behind carousel-control, on mobile mode*/
 	}
 }
