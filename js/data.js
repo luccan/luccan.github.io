@@ -417,6 +417,8 @@ var data = [
 				<p>Hype And Seek is a neat Influencer Marketing Platform. Visit them <a href='https://www.hypeandseek.com' target=\"_blank\">here</a>.</p>",
 		priority: 25,
 		relevance: {
+			prd: 10,
+			project_solo: 10,
 			site_migration: 10,
 			php: 5,
 			laravel: 5,
@@ -441,6 +443,8 @@ var data = [
 				<p>OK, let's be fair. It's a prototype. It's not as complex as it sounds.</p>",
 		priority: 25,
 		relevance: {
+			poc: 10,
+			project_team: 10,
 			vr: 10,
 			google_cardboard: 5,
 			gearvr: 3,
@@ -461,6 +465,8 @@ var data = [
 				<p>TIL Particles, 3D Physics, and basic rigging.</p>",
 		priority: 15,
 		relevance: {
+			poc: 10,
+			project_team: 10,
 			unity: 10,
 			blender: 10,
 			game_development: 7
@@ -481,6 +487,8 @@ var data = [
 				<p>Read up more <a href='./content/2016/jan/google-forms-backend-for-static-web.html' target=\"_blank\">here</a>.</p>",
 		priority: 25,
 		relevance: {
+			prd: 10,
+			project_solo: 10,
 			html5: 10,
 			javascript: 10,
 			bootstrap: 7,
@@ -502,6 +510,8 @@ var data = [
 				<p>Read up more <a href='./content/2015/nov/lazyblogger.html' target=\"_blank\">here</a>.</p>",
 		priority: 15,
 		relevance: {
+			prd: 10,
+			project_solo: 10,
 			html5: 10,
 			javascript: 10,
 			github: 3
@@ -521,6 +531,8 @@ var data = [
 				<p>Initial exposure about networks and DNS deployment models.</p>",
 		priority: 20,
 		relevance: {
+			prd: 10,
+			project_solo: 10,
 			html5: 10,
 			javascript: 10,
 			bootstrap: 8,
@@ -539,6 +551,8 @@ var data = [
 		details: "<p>Exposure to image rendering and kinect sdk. Also learned the basic idea of SLAM and its various applications.</p>",
 		priority: 5,
 		relevance: {
+			poc: 10,
+			project_solo: 10,
 			csharp: 10,
 			kinectsdk: 7,
 			pointcloud: 7,
@@ -558,6 +572,9 @@ var data = [
 					<p>And of course, game design.</p>",
 		priority: 20,
 		relevance: {
+			prd: 10,
+			project_team: 10,
+			event_planning: 10,
 			arduino: 10,
 			wood_works: 10,
 			game_development: 8
@@ -575,6 +592,8 @@ var data = [
 		details: "<p>Initial exposure to kml, geolocation processing, and cascading agglomeration algorithms under valuable mentorship of the Assistant Researcher.</p>",
 		priority: 10,
 		relevance: {
+			poc: 10,
+			project_solo: 10,
 			java: 10,
 			geolocation: 8,
 			algorithm: 1
@@ -592,6 +611,8 @@ var data = [
 		details: "<p>Experienced the nature of liasing with third party companies, branding, public speaking, and marketing benefits to potential sponsors.</p>",
 		priority: 10,
 		relevance: {
+			prd: 10,
+			project_team: 10,
 			sponsorship: 10,
 			event_planning: 10
 		}
@@ -608,6 +629,8 @@ var data = [
 		details: "<p>Initial exposure to libgdx and android studio.</p>",
 		priority: 8,
 		relevance: {
+			poc: 10,
+			project_team: 10,
 			libgdx: 10,
 			android_studio: 10,
 			game_development: 5,
@@ -626,6 +649,8 @@ var data = [
 		details: "<p>Initial exposure to eclipseadt and RANSAC image recognition.</p>",
 		priority: 5,
 		relevance: {
+			poc: 10,
+			project_team: 10,
 			eclipseadt: 3,
 			ransac: 1
 		}
@@ -643,6 +668,8 @@ var data = [
 					<p>Credits to prof. <a href=\"http://www.okakurniawan.net/\" target=\"_blank\">Oka</a> for the kind guidance and also, as the inspiration for the name of the game.</p>",
 		priority: 10,
 		relevance: {
+			poc: 10,
+			project_team: 10,
 			game_development: 10,
 			multisim: 10
 		}
@@ -661,6 +688,8 @@ var data = [
 					<p>Picked up Premiere Pro, Photoshop, Circuitry, Renewable Energy, and great teammates.</p>",
 		priority: 15,
 		relevance: {
+			poc: 10,
+			project_team: 10,
 			arduino: 5,
 			premiere_pro: 4
 		}
@@ -679,6 +708,7 @@ var data = [
 		details: "<p>Technically, tied with another person, but hey.</p>",
 		priority: 25,
 		relevance: {
+			award: 10,
 			business_analytics: 10
 		}
 	},
@@ -694,6 +724,8 @@ var data = [
 		details: "<p>Re-exploration of childhood game development passion brought to life by <a href=\"http://surijagabriel.wix.com/portfolio\" target=\"_blank\">Gabriel Stephanus Surija</a>, talented artist, animator, and rigger, among other things.</p>",
 		priority: 25,
 		relevance: {
+			hackathon: 10,
+			award: 10,
 			gamemaker: 10
 		}
 	},
@@ -709,6 +741,7 @@ var data = [
 		details: "<p>Syllabus includes basic C++ and Database concepts.</p>",
 		priority: 5,
 		relevance: {
+			award: 10,
 			cpp: 5,
 			database: 5
 		}
@@ -732,6 +765,7 @@ var data = [
 					",
 		priority: 10,
 		relevance: {
+			hackathon: 10,
 			powerpoint: 10,
 			miro: 7
 		}
@@ -750,6 +784,7 @@ var data = [
 					<p>A fun change in using SQL for pure analysis instead of using it to store data.</p>",
 		priority: 10,
 		relevance: {
+			hackathon: 10,
 			ssms: 10,
 			business_analytics: 10
 		}
@@ -771,6 +806,7 @@ var data = [
 					<p>I would like to thank Made Raditya Pujamurti, Jefferey Effendy, Indra Firmansyah, and Ryan Alexander for an amazing 3-day sprint.</p>",
 		priority: 25,
 		relevance: {
+			hackathon: 10,
 			meteorjs: 10,
 			html5: 3,
 			bootstrap: 3,
@@ -790,6 +826,7 @@ var data = [
 					<p>It tingles my interest in the stock market more than ever.</p>",
 		priority: 10,
 		relevance: {
+			hackathon: 10,
 			gamemaker: 10
 		}
 	},
@@ -805,6 +842,7 @@ var data = [
 		details: "<p>Initial exposure to hackathon and Virtual Reality technologies.</p>",
 		priority: 5,
 		relevance: {
+			hackathon: 10,
 			java: 10,
 			data_visualization: 6,
 			vr: 3
@@ -823,6 +861,8 @@ var data = [
 					<p>Also, hacking is cool.</p>",
 		priority: 2,
 		relevance: {
+			certification: 10,
+			cyber_security: 10,
 			batchscript: 2,
 			networks: 10
 		}
