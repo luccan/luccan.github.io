@@ -432,5 +432,6 @@ $(document).ready(function(){
 	$('#timelineCarousel').on('slid.bs.carousel', function() { 
 		reset_current_carousel_panel_details();
 	});
+	console.log($('#timelineCarousel'));
 });
 //console.log(carousel_content_str);
