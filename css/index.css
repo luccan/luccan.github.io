@@ -46,6 +46,9 @@ body {
 	.carousel-see-details-text {
 		margin-right: 40px; /*Ensure it doesn't go behind carousel-control, on mobile mode*/
 	}
+	.carousel-hide-details-text {
+		margin-right: 40px; /*Ensure it doesn't go behind carousel-control, on mobile mode*/
+	}
 }
 .carousel .panel{
 	padding: 10px;
