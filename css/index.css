@@ -44,6 +44,7 @@ body {
 }
 .carousel-caption-content a{
 	z-index: 101; /*More than carousel-control*/
+	position: relative; /*Needed for z-index to work*/
 }
 .carousel .panel{
 	padding: 10px;
@@ -172,9 +173,12 @@ body {
 		display: none; /*Hide Feb, Apr, etc*/
 	}
 	.gt-timeline div.even-month {
-		display: none; /*Hide Jan, Mar, etc*/
+		display: none; /*Hide Mar, May, etc*/
 	}
-	.gt-timeline div .year .leftend {
+	.gt-timeline div.month {
+		display: none; /*Hide Text of all months*/
+	}
+	.gt-timeline .leftend .year div {
 		top: -20px; /*Center the height of year when .month is hidden*/
 	}
 
