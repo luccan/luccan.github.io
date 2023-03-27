@@ -3,7 +3,8 @@ var relevance_relations = [
 		parent: "algorithm",
 		child: {
 			simulated_annealing: 9,
-			ransac: 10
+			ransac: 10,
+			hausdorff_distance: 10
 		}
 	},
 	{
@@ -239,7 +240,8 @@ var relevance_relations = [
 	{
 		parent: "database",
 		child: {
-			sql: 10
+			sql: 10,
+			nosql: 10
 		}
 	},
 	{
@@ -285,6 +287,12 @@ var relevance_relations = [
 		child: {
 			ssms: 10,
 			mysql: 10
+		}
+	},
+	{
+		parent: "nosql",
+		child: {
+			mongodb: 10
 		}
 	},
 	{
@@ -459,6 +467,16 @@ var relevance_relations = [
 		child: {
 			credence: 10,
 			ninety_three_k: 10
+		}
+	},
+	{
+		parent: "three_dimensional_model",
+		child: {
+			mesh: 10,
+			blender: 10,
+			kinectsdk: 10,
+			slam: 10,
+			pointcloud: 10 /*TBC*/
 		}
 	}
 ];
