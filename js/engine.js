@@ -403,9 +403,9 @@ function display_model_str(data, id){
 function reset_current_carousel_panel_details(){
 	$(".carousel-see-details-text.panel-hidden:visible").toggleClass("panel-hidden"); /* Unhide Current See Details */
 	$(".carousel-details-panel:visible").slideToggle("0"); /* Hide Current Details Panel (instant) */
-	console.log("resetting current details");
-	console.log($(".carousel-see-details-text.panel-hidden:visible"));
-	console.log($(".carousel-details-panel:visible"));
+	//console.log("resetting current details");
+	//console.log($(".carousel-see-details-text.panel-hidden:visible"));
+	//console.log($(".carousel-details-panel:visible"));
 }
 
 var carousel_content_str = ''
@@ -429,9 +429,8 @@ $(document).ready(function(){
 	//$('[data-toggle="tooltip"]').tooltip('show');
 	$('[data-toggle="tooltip"]').mouseleave(function() { $(this).tooltip('hide'); });
 	
-	$('#timelineCarousel').on('slid.bs.carousel', function() { 
+	$('#timelineCarousel').on('slide.bs.carousel', function() { 
 		reset_current_carousel_panel_details();
 	});
-	console.log($('#timelineCarousel'));
 });
 //console.log(carousel_content_str);
