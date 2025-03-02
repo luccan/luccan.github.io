@@ -2,13 +2,88 @@
 var data = [
 	/* Work Experience */
 	{
+		title: "Software Reliability Engineer",
+		type: "work",
+		imgurl: "./img/shift-technology_logo.png",
+		company: "Shift Technology",
+		position: "Software Reliability Engineer",
+		start: new Date("01 Mar 2025"),
+		end: new Date(), /*To be updated*/
+		desc: "The full project version of Cloud Engineer Role",
+		details: "<p>Basically this is a natural next step of the previous engineer role - Basically full-time projects less crisis management.<p>\
+					<p>Let's see what kind of cool stuff I'll be working on next.</p>\
+					",
+		priority: 10,
+		relevance: {
+			terraform: 10,
+			ansible: 10,
+			github_actions: 6
+		}
+	},
+	{
+		title: "Cloud Engineer",
+		type: "work",
+		imgurl: "./img/shift-technology_logo.png",
+		company: "Shift Technology",
+		position: "Cloud Engineer",
+		start: new Date("01 May 2024"),
+		end: new Date("01 Mar 2025"),
+		desc: "Upgraded version of Systems & Network Engineer Role",
+		details: "<p>Basically this is a continuation of the previous ops role - with more focus on doing projects instead of just ops.<p>\
+					<p>De-facto dude to do Quarterly equipment maintenance - mostly firewalls, but also other software & firmware.</p>\
+					<p>More exposure to complex tasks, tech debts, and new projects.</p>\
+					<p>Notable projects: </p>\
+					<ul>\
+						<li>Rollout of Palo Alto Prisma VPN for 600 users</li>\
+						<li>Rollout of IdentityNow (the cloud version of the legacy on-prem IdentityIQ)</li>\
+						<li>Deployment of a client-managed on-prem infrastructure - integrated with our IaC pipeline</li>\
+						<li>LDAP Traffic Optimization</li>\
+					</ul>\
+					</p>\
+					<p>Also, got somewhat involved with cool stuffs like Azure OCR, Databricks, CosmosDB, etc</p>\
+					<p>Also messed around with GH actions, terraform, ansible, and k8s more compared to my first year in Shift!</p>\
+					",
+		priority: 60,
+		relevance: {
+			palo_alto_prisma: 10,
+			identitynow: 10,
+			terraform: 10,
+			ansible: 10,
+			github_actions: 6,
+			grafana: 6
+		}
+	},
+	{
+		title: "Infrastructure Lead, APAC",
+		type: "work",
+		imgurl: "./img/shift-technology_logo.png",
+		company: "Shift Technology",
+		position: "Infrastructure Lead, APAC",
+		start: new Date("01 Apr 2023"),
+		end: new Date("01 May 2024"),
+		desc: "Communicate and coordinate major changes with project stakeholders and management",
+		details: "<p>While this title is mostly a formality, being a the APAC lead (in a team of 4) sounds good for resume!<p>\
+					<p>Kick-started a Change Management Meeting to align various stakeholders with major changes happening in the Infrastructure.</p>\
+					<p>This prevents potentially breaking changes from being performed during sensitive period (e.g. solution deployments or project crunch period).</p>\
+					</p>\
+					<p>Trained APAC Cloud Operations team (maybe to the point that some of them became even better than myself :p)</p>\
+					<p>More involved in security audits (yay, more checklists).</p>\
+					",
+		priority: 40,
+		relevance: {
+			jira: 10,
+			confluence: 10,
+			teamwork: 10
+		}
+	},
+	{
 		title: "System & Network Engineer",
 		type: "work",
 		imgurl: "./img/shift-technology_logo.png",
 		company: "Shift Technology",
 		position: "System & Network Engineer",
-		start: new Date("28 Feb 2022"),
-		end: new Date(), /*To be updated*/
+		start: new Date("01 Apr 2023"),
+		end: new Date("01 May 2024"),
 		desc: "Create, manage, monitor and maintain company infrastructure, cloud and on-prem",
 		details: "<p>Hybrid GUI, CLI, and Infrastructure as Code, both manual and automation.<p>\
 					<p>Implement Group Policies and Identity Access Management.</p>\
