@@ -156,7 +156,7 @@ var relevance_relations = [
 	{
 		parent: "azure",
 		child: {
-			maws: 10,
+			azure_webapp_service: 10,
 			winserver: 6
 		}
 	},
@@ -169,12 +169,25 @@ var relevance_relations = [
 		}
 	},
 	{
+		parent: "github",
+		child: {
+			github_actions: 10
+		}
+	},
+	{
 		parent: "sailpoint",
 		child: {
 			identityiq: 10,
 			identitynow: 10
 		}
 	},
+	{
+		parent: "palo_alto",
+		child: {
+			palo_alto_prisma: 10
+		}
+	},
+	
 	
 	
 	/* SECTION: workflow / role */
@@ -197,6 +210,7 @@ var relevance_relations = [
 		parent: "automation",
 		child: {
 			iac: 10,
+			github_actions: 10,
 			monitoring: 10,
 			testautomation: 10
 		}
@@ -226,7 +240,9 @@ var relevance_relations = [
 		parent: "deployment",
 		child: {
 			infrastructure: 10,
-			site_migration: 10
+			site_migration: 10,
+			iac: 10,
+			github_actions: 10
 		}
 	},
 	{
@@ -370,6 +386,7 @@ var relevance_relations = [
 			github: 8
 		}
 	},
+	
 	
 	/* SECTION: Classification */
 	{
