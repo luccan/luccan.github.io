@@ -337,7 +337,7 @@ var data = [
 			aspmvc: 8,
 			windows_service: 8,
 			git: 6,
-			maws: 7,
+			azure_webapp_service: 7,
 			kendoui: 8,
 			bootstrap: 8,
 			options: 8,
