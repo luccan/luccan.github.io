@@ -2,11 +2,11 @@
 var data = [
 	/* Work Experience */
 	{
-		title: "Software Reliability Engineer",
+		title: "Site Reliability Engineer",
 		type: "work",
 		imgurl: "./img/shift-technology_logo.png",
 		company: "Shift Technology",
-		position: "Software Reliability Engineer",
+		position: "Site Reliability Engineer",
 		start: new Date("01 Mar 2025"),
 		end: new Date(), /*To be updated*/
 		desc: "The full project version of Cloud Engineer Role",
