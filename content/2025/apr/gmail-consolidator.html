@@ -1,0 +1,124 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<body style="display: none;"><div id="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Consolidate emails (in Gmail) into a Google Docs document</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<img class="img-responsive" src="./img/blog/gmail-consolidator/gmail-consolidator.png" alias="gmail-consolidator"></img>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-10">
+			<div class="panel">
+				<p class="blog">
+				Ever want to consolidate some emails into a google docs?<br/>
+				For my simple use case, somehow I didn't manage to find a free tool that does this.<br/>
+				Plus, I don't really want to expose my precious emails to random third party tools.<br/>
+				<br/>
+				Turns out, it's pretty simple to use Google's AppScript to do this!<br/>
+				(Well, your mileage may vary depending on the complexity of the emails you want to consolidate)<br/>
+				<br/>
+				Regardless, I will leave this boilerplate code here.<br/>
+				Just know that it's possible to do it for free :D<br/>
+				<br/>
+				</p>
+				<h2>Getting Started Guide:</h2>
+				<p class="blog">
+				<div><ol class="list-group">
+					<li class="list-group-item">
+					1. Make a copy of GmailConsolidator_Doc.<br/>
+						<div class="code"><p>
+						https://docs.google.com/document/d/1yILhS1DgvXhytZvsKxsJvdoEnj9GszpsqzDtJAF35Fs/view
+						</p></div>
+						<br/>
+						This allows you to edit your own copy and later on, isolate the access to your own Gmail to your own script.<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-1.png" alias="get-started-1"></img>
+						<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-2.png" alias="get-started-2"></img>
+					</li>
+					
+					<li class="list-group-item">
+					2. Now, open the copied document (on your gdrive now, not mine) and open Extensions > Apps script<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-3.png" alias="get-started-3"></img>
+						<br/>
+						Take a look at the gmail_filter. This is exactly the same as your gmail filter bar.</br>
+						Customize this filter as necessary to only include emails that you want to consolidate in the google doc.</br>
+						You should test this on your own inbox first :)</br>
+						<div class="code"><p>
+						https://mail.google.com/mail/u/0/#search/is%3Aunread+newer_than%3A7d+category%3Aupdates
+						</p></div>
+						<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/customize-1.png" alias="customize-1"></img>
+						<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/customize-2.png" alias="customize-2"></img>
+					</li>
+					
+					<li class="list-group-item">
+					3. Change the Function dropdown to run "extractMessages", and click "Run"<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-4.png" alias="get-started-4"></img>
+						<br/>
+						Now you have to grant the Apps script some permissions.<br/>
+						Don't worry, you are granting permission to your own copy of the script (not mine!).<br/>
+						(If you want to be very sure, rename your Apps script and you will see the name of your Apps script instead of "GmailConsolidator").<br/>
+						<br/>
+						Click "Review permissions".<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-5.png" alias="get-started-5"></img>
+						<br/>
+						Sign in to your gmail.<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-6.png" alias="get-started-6"></img>
+						<br/>
+						Click "Advanced".<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-7.png" alias="get-started-7"></img>
+						<br/>
+						Then "Go to GmailConsolidator (unsafe)"<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-8.png" alias="get-started-8"></img>
+						<br/>
+						Select all, then click "Continue".<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/get-started-9.png" alias="get-started-9"></img>
+					</li>
+				</ol></div>
+				Voila! The script should run and populate your Google Docs (the one that you copied)<br/>
+				Now, the content is probably very messy (take a look at <a href="https://docs.google.com/document/d/1yILhS1DgvXhytZvsKxsJvdoEnj9GszpsqzDtJAF35Fs/view?tab=t.0#heading=h.2v7mjr1kiagm">this mail</a> from TechInAsia)</br>
+				</br>
+				So, you probably have to parse the msg body accordingly - hopefully your use case is not too complicated :p</br>
+				Note: You might want to use msg.getBody() to parse HTML instead of plain text.</br>
+				</p>
+				<h2>Cleaning Up Access:</h2>
+				<p class="blog">
+				<div><ol class="list-group">
+					<li class="list-group-item">
+						After you are done with your task,<br/>
+						You can go to Google Account Permissions<br/>
+						<div class="code"><p>
+						https://myaccount.google.com/permissions
+						</p></div>
+						<br/>
+						Find "GmailConsolidator",<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/cleanup-1.png" alias="cleanup-1"></img>
+						<br/>
+						Then "Delete all connections you have with GmailConsolidator"<br/>
+						<img class="img-responsive" src="./img/blog/gmail-consolidator/cleanup-2.png" alias="cleanup-2"></img>
+					</li>
+					
+					<li class="list-group-item">
+						Or maybe you want to make this a scheduled run - in that case, here's some Apps Script trigger documentation for you to read up on.<br/>
+					<a href="https://developers.google.com/apps-script/guides/triggers">Simple Triggers</a><br/>
+					</li>
+				</ol></div>
+				<p class="blog">
+				I hope that saved you some pain and money.<br/>
+				Yes, you will still need to do most of the Apps Script coding, but I suppose this template can be a good starting point for you.<br/>
+				<br/>
+				Here are further resources about Apps Script (or you can just ask chatGPT I guess):<br/>
+				<a href="https://developers.google.com/apps-script">Apps Script documentation</a><br/>
+				<br/>
+				Cheers!</br>
+			</p>
+			</div>
+		</div>
+	</div>
+</div><script src="../../../js/lazyblogger.js"></script></body>

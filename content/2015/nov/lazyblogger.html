@@ -57,7 +57,21 @@
 				<p class="blog">
 				Unfortunately, due to certain ActiveX restrictions, debugging LazyBlogger locally requires Mozzila Firefor.<br/>
 				But fret not, once it gets pushed to github it will work on chrome and ie as well.<br/>
-				Get it <a href="https://github.com/luccan/LazyBlogger">here</a> and check out the <a href="https://luccan.github.io/LazyBlogger">demo</a>.
+				Get it <a href="https://github.com/luccan/LazyBlogger">here</a> and check out the <a href="https://luccan.github.io/LazyBlogger">demo</a>.<br/>
+				<br/>
+				<b>Update 2025-04-26:</b><br/>
+				Browser security has improved, and file:// is now subject to CORS.<br/>
+				Read: opening Lazyblogger locally will now load a blank page due to CORS policy.<br/>
+				<br/>
+				The workaround is to run the page in python, so you can access it via localhost.<br/>
+				Navigate to the parent directory of your index.html, and run<br/>
+				<div class="code">
+				<p>
+				python -m http.server 8000
+				</p>
+				</div>
+				<br/>
+				And now your site should be accessible on http://localhost:8000!
 				</p>
 			</div>
 		</div>
