@@ -8,7 +8,7 @@ p.blog {
 div.code {
 	font-size: 12px;
 	font-family: Calibri;
-	background-color: #F9F2F4;
+	background-color: #D7C4CA;
 	color: #C7254E;
 	line-height: 1em;
 	padding: 8px;
@@ -16,7 +16,7 @@ div.code {
 }
 
 .panel {
-	background-color: #999999;
+	background-color: #AAA;
 	padding: 20px;
 	color: black;
 }
@@ -24,4 +24,13 @@ div.code {
 .img-responsive {
 	border-radius: 5px;
 	border: thin white solid;
+}
+
+li .img-responsive {
+	border: thin black solid;
+}
+
+.list-group-item {
+	background-color: #DDD;
+	border: 1px solid #BBB
 }
